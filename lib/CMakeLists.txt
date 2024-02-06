@@ -1,0 +1,3 @@
+add_subdirectory(algorithms)
+add_subdirectory(data_structures)
+target_link_libraries(EducationProject algorithms)

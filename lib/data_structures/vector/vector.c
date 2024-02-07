@@ -107,6 +107,25 @@ void vectorPopBack(vector *v){
 }
 
 
+int* vectorAt(vector *v, size_t index){
+    if(index >= v->size){
+        fprintf(stderr, "IndexError: a[%zu] is not exists", index);
+        exit(1);
+    }
+    return &v->data[index];
+}
+
+
+int* vectorBack(vector *v){
+    return &v->data[v->size - 1];
+}
+
+
+int* vectorFront(vector *v){
+    return &v->data[0];
+}
+
+
 
 
 void vectorDelete(vector *v){

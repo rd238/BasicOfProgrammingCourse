@@ -202,10 +202,51 @@ void test_vectorPopBack_notEmptyVector() {
     assert(v.capacity == 1);
 }
 
+void test_vectorAt_notEmptyVector(){
+    vector a = vectorCreate(5);
+    for(int i = 0; i < 5; i++)
+        vectorPushBack(&a, i + 1);
+    int *b = vectorAt(&a, 0);
+    printf("\n%d\n", *b);
+    vectorDelete(&a);
+}
+
+void test_vectorAt_requestToLastElement(){
+    vector a = vectorCreate(5);
+    for(int i = 0; i < 5; i++)
+        vectorPushBack(&a, i + 1);
+    a.size = 5;
+    int *b = vectorAt(&a, 4);
+    printf("%d\n", *b);
+    vectorDelete(&a);
+}
+
+void test_vectorBack_oneElementInVector(){
+    vector a = vectorCreate(5);
+    for(int i = 0; i < 5; i++)
+        vectorPushBack(&a, i + 1);
+    int *b = vectorBack(&a);
+    printf("%d\n", *b);
+    vectorDelete(&a);
+}
+
+void test_vectorFront_oneElementInVector(){
+    vector a = vectorCreate(5);
+    for(int i = 0; i < 5; i++)
+        vectorPushBack(&a, i + 1);
+    int *b = vectorFront(&a);
+    printf("%d\n", *b);
+    vectorDelete(&a);
+}
+
 void test(){
     test_vectorPushBack_emptyVector();
     test_vectorPushBack_fullVector();
     test_vectorPopBack_notEmptyVector();
+    test_vectorAt_notEmptyVector();
+    test_vectorAt_requestToLastElement();
+    test_vectorBack_oneElementInVector();
+    test_vectorFront_oneElementInVector();
 }
 
 

@@ -51,6 +51,17 @@ void vectorPushBack(vector *v, int x);
 void vectorPopBack(vector *v);
 
 
+//возвращает указатель на index-ый элемент вектора.
+int* vectorAt(vector *v, size_t index);
+
+
+//возвращает указатель на последний элемент вектора.
+int* vectorBack(vector *v);
+
+
+//возвращает указатель на нулевой элемент вектора.
+int* vectorFront(vector *v);
+
 
 
 

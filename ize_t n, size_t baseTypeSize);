@@ -1,0 +1,51 @@
+[33mcommit 0ca1de064a6012f9e07a01119a499dae776f26cb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: rd238 <logcatlimon@gmail.com>
+Date:   Wed Feb 7 16:48:23 2024 +0300
+
+    refactoring
+
+ lib/data_structures/vector/vector.c |  2 [31m--[m
+ lib/data_structures/vector/vector.h | 11 [31m-----------[m
+ 2 files changed, 13 deletions(-)
+
+[33mcommit b61467c1cce80b8f3592df9aeaba8bbac999b863[m
+Author: rd238 <logcatlimon@gmail.com>
+Date:   Wed Feb 7 16:34:57 2024 +0300
+
+    append access function
+
+ lib/data_structures/vector/vector.c | 19 [32m+++++++++++++++++[m
+ lib/data_structures/vector/vector.h | 11 [32m++++++++++[m
+ main.c                              | 41 [32m+++++++++++++++++++++++++++++++++++++[m
+ 3 files changed, 71 insertions(+)
+
+[33mcommit a33093f014754fad8c1447a1f7a6f873d8422add[m
+Author: rd238 <logcatlimon@gmail.com>
+Date:   Wed Feb 7 16:03:05 2024 +0300
+
+    append push / pop functions
+
+ lib/data_structures/vector/vector.c | 40 [32m++++++++++++++++++++++++++++++++++[m
+ lib/data_structures/vector/vector.h | 34 [32m+++++++++++++++++++++++++++++[m
+ main.c                              | 43 [32m++++++++++++++++++++++++++[m[31m-----------[m
+ 3 files changed, 105 insertions(+), 12 deletions(-)
+
+[33mcommit 634c2ea1aea828f9a12ecfeffb2ce4f4572e9d3b[m
+Author: rd238 <logcatlimon@gmail.com>
+Date:   Wed Feb 7 14:42:29 2024 +0300
+
+    memory usage of vector
+
+ lib/data_structures/vector/vector.c | 74 [32m+++++++++++++++++++++++++++++++++++++[m
+ lib/data_structures/vector/vector.h | 36 [32m++++++++++++++++++[m
+ main.c                              | 26 [32m++++++++++++[m[31m-[m
+ 3 files changed, 135 insertions(+), 1 deletion(-)
+
+[33mcommit 86efdfa1f494cec6037556ec64435fc8cb266805[m
+Author: rd238 <logcatlimon@gmail.com>
+Date:   Tue Feb 6 23:25:17 2024 +0300
+
+    first commit
+
+ main.c | 172 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ 1 file changed, 172 insertions(+)

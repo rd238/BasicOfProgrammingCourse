@@ -239,6 +239,12 @@ build lib/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj: C_
   OBJECT_DIR = lib\data_structures\CMakeFiles\data_structures.dir
   OBJECT_FILE_DIR = lib\data_structures\CMakeFiles\data_structures.dir\vector
 
+build lib/data_structures/CMakeFiles/data_structures.dir/vector/vector_void.c.obj: C_COMPILER__data_structures_unscanned_Debug C$:/Users/Master/CLionProjects/EducationProject/lib/data_structures/vector/vector_void.c || cmake_object_order_depends_target_data_structures
+  DEP_FILE = lib\data_structures\CMakeFiles\data_structures.dir\vector\vector_void.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = lib\data_structures\CMakeFiles\data_structures.dir
+  OBJECT_FILE_DIR = lib\data_structures\CMakeFiles\data_structures.dir\vector
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target data_structures
@@ -247,7 +253,7 @@ build lib/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj: C_
 #############################################
 # Link the static library lib\data_structures\libdata_structures.a
 
-build lib/data_structures/libdata_structures.a: C_STATIC_LIBRARY_LINKER__data_structures_Debug lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj lib/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj
+build lib/data_structures/libdata_structures.a: C_STATIC_LIBRARY_LINKER__data_structures_Debug lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj lib/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj lib/data_structures/CMakeFiles/data_structures.dir/vector/vector_void.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = lib\data_structures\CMakeFiles\data_structures.dir
   POST_BUILD = cd .

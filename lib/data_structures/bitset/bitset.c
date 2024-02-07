@@ -70,10 +70,10 @@ void bitsetPrint(bitset set) {
     printf("{");
     for (int i = 0; i < set.maxValue; i++) {
         if (set.value & 1 << i)
-            if (!(i == set.maxValue - 1))
-                printf("%d, ", i + 1);
-            else
+            if (1 << (i + 1) > set.value)
                 printf("%d", i + 1);
+            else
+                printf("%d, ", i + 1);
     }
         printf("}\n");
 }

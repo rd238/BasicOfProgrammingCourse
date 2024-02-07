@@ -172,6 +172,10 @@ void test(){
 
 */
 
+/*
+    VECTOR STRUCTURE TESTS
+
+
 #include "lib/data_structures/vector/vector.h"
 
 
@@ -249,8 +253,11 @@ void test(){
     test_vectorFront_oneElementInVector();
 }
 
+*/
 
+#include "lib/data_structures/vector/vector_void.h"
 
 int main() {
-    test();
+    int a[4] = {1,2,3,4};
+    vector_void b = {a,4,4,sizeof(int)};
 }

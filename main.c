@@ -174,23 +174,42 @@ void test(){
 
 #include "lib/data_structures/vector/vector.h"
 
-void bad_alloc(){
-    vector a = vectorCreate(SIZE_MAX);
+
+
+void test_vectorPushBack_emptyVector(){
+    vector a = vectorCreate(0);
+    vectorPushBack(&a, 5);
+    printf("%d\n %zu %zu\n\n", a.data[0], a.size, a.capacity);
     vectorDelete(&a);
+}
+
+void test_vectorPushBack_fullVector(){
+    vector a = vectorCreate(5);
+    for(int i = 0; i < 5; i++)
+        vectorPushBack(&a, i + 1);
+    vectorPushBack(&a, 6);
+    for(int i = 0; i < a.size; i++)
+        printf("%d ", a.data[i]);
+    vectorDelete(&a);
+}
+
+void test_vectorPopBack_notEmptyVector() {
+    vector v = vectorCreate(0);
+    vectorPushBack(&v, 10);
+    assert(v.size == 1);
+    vectorPopBack(&v);
+    assert(v.size == 0);
+    assert(v.capacity == 1);
+}
+
+void test(){
+    test_vectorPushBack_emptyVector();
+    test_vectorPushBack_fullVector();
+    test_vectorPopBack_notEmptyVector();
 }
 
 
 
-
 int main() {
-    vector a = vectorCreate(15);
-    for(int i = 0; i < a.capacity - 5; i++){
-        a.data[i] = i + 1;
-        a.size++;
-    }
-    printf("\n", a.size, a.capacity);
-    vectorShrinkToFit(&a);
-    for(int i = 0; i < a.capacity; i++)
-        printf("%d ", a.data[i]);
-    vectorDelete(&a);
+    test();
 }

@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <stdlib.h>
+#include <stdbool.h>
+#include <assert.h>
+
 
 typedef struct vector {
     int *data; // Указатель на элементы вектора
@@ -28,8 +31,39 @@ void vectorClear(vector *v);
 void vectorShrinkToFit(vector *v);
 
 
+//возвращает истина, если вектор пустой
+bool vectorIsEmpty(vector *v);
+
+
+//возвращает истина, если вектор полный
+bool vectorIsFull(vector *v);
+
+
+// возвращает i-ый элемент вектора v.
+int vectorGetValue(vector *v, size_t i);
+
+
+// добавляет элемент x в конец вектора v.
+void vectorPushBack(vector *v, int x);
+
+
+//удаляет последний элемент из вектора.
+void vectorPopBack(vector *v);
+
+
+
+
+
+
+
+
+
 //освобождает память, выделенную вектору.
 void vectorDelete(vector *v);
+
+
+
+
 
 
 

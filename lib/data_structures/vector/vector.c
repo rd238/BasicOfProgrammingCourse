@@ -69,6 +69,46 @@ void vectorShrinkToFit(vector *v){
 }
 
 
+bool vectorIsEmpty(vector *v){
+    return 0 == v->size;
+}
+
+
+bool vectorIsFull(vector *v){
+    return v->size == v->capacity;
+}
+
+
+int vectorGetValue(vector *v, size_t i){
+    return i < v->size ? v->data[i] : -1;
+}
+
+
+void vectorPushBack(vector *v, int x){
+    if(v->capacity == 0){
+        vectorReserve(v, 1);
+        v->data[v->size++] = x;
+    }else if(v->size == v->capacity){
+        vectorReserve(v, v->capacity * 2);
+        v->data[v->size++] = x;
+    }else{
+        v->data[v->size++] = x;
+    }
+}
+
+
+void vectorPopBack(vector *v){
+    if(vectorIsEmpty(v)){
+        fprintf(stderr, "vector is empty");
+        exit(1);
+    }else{
+        v->size--;
+    }
+}
+
+
+
+
 void vectorDelete(vector *v){
     free(v->data);
 }

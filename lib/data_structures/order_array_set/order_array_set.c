@@ -145,10 +145,6 @@ void orderArraySetPrint(order_array_set set){
 
 
 
-
-
-
-
 void orderArraySetDelete(order_array_set set){
     free(set.data);
 }

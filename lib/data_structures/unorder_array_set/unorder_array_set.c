@@ -59,7 +59,6 @@ bool unorderArraySetIsEqual(unorder_array_set set1, unorder_array_set set2){
     for(int i = 0; i < set2.size; i++)
         b[i] = set2.data[i];
 
-
     for(int i = 0; i < set1.size; i++){
         int is_true = 1;
         for(int j = 0; j < set2.size; j++){
@@ -72,7 +71,6 @@ bool unorderArraySetIsEqual(unorder_array_set set1, unorder_array_set set2){
         if(is_true)
             return 0;
     }
-
     return 1;
 }
 

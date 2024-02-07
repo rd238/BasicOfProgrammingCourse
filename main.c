@@ -1,3 +1,7 @@
+/*
+ORDER ARRAY SET TESTS
+
+
 #include "lib/data_structures/order_array_set/order_array_set.h"
 
 
@@ -166,7 +170,27 @@ void test(){
     order_complement();
 }
 
+*/
+
+#include "lib/data_structures/vector/vector.h"
+
+void bad_alloc(){
+    vector a = vectorCreate(SIZE_MAX);
+    vectorDelete(&a);
+}
+
+
+
 
 int main() {
-    test();
+    vector a = vectorCreate(15);
+    for(int i = 0; i < a.capacity - 5; i++){
+        a.data[i] = i + 1;
+        a.size++;
+    }
+    printf("\n", a.size, a.capacity);
+    vectorShrinkToFit(&a);
+    for(int i = 0; i < a.capacity; i++)
+        printf("%d ", a.data[i]);
+    vectorDelete(&a);
 }

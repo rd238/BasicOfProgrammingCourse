@@ -63,19 +63,8 @@ int* vectorBack(vector *v);
 int* vectorFront(vector *v);
 
 
-
-
-
-
-
-
 //освобождает память, выделенную вектору.
 void vectorDelete(vector *v);
-
-
-
-
-
 
 
 #endif //EDUCATIONPROJECT_VECTOR_H

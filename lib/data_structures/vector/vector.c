@@ -126,8 +126,6 @@ int* vectorFront(vector *v){
 }
 
 
-
-
 void vectorDelete(vector *v){
     free(v->data);
 }

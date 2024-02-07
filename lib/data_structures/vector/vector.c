@@ -33,6 +33,8 @@ void vectorReserve(vector *v, size_t newCapacity){
     if(newCapacity != v->capacity){
         if(newCapacity == 0) {
             v->data = NULL;
+            v->size = 0;
+            v->capacity = 0;
         }else {
             int *a = (int*)malloc(sizeof(int) * newCapacity);
             if(a != NULL){

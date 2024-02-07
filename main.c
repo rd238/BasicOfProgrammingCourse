@@ -258,6 +258,9 @@ void test(){
 #include "lib/data_structures/vector/vector_void.h"
 
 int main() {
-    int a[4] = {1,2,3,4};
-    vector_void b = {a,4,4,sizeof(int)};
+    int a[6] = {1,2,3,4,5,6};
+    vector_void b = vectorVoidCreate(6, sizeof(int));
+    printf("%zu", b.size);
+    vectorVoidShrinkToFit(&b);
+    printf("%zu", b.capacity);
 }

@@ -89,13 +89,10 @@ int vectorGetValue(vector *v, size_t i){
 void vectorPushBack(vector *v, int x){
     if(v->capacity == 0){
         vectorReserve(v, 1);
-        v->data[v->size++] = x;
     }else if(v->size == v->capacity){
         vectorReserve(v, v->capacity * 2);
-        v->data[v->size++] = x;
-    }else{
-        v->data[v->size++] = x;
     }
+    v->data[v->size++] = x;
 }
 
 

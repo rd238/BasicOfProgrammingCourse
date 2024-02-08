@@ -1,5 +1,5 @@
 # ninja log v5
-1	311	7290236973980013	build.ninja	ba8bff40a7652216
+1	311	7290909279870754	build.ninja	ba8bff40a7652216
 11	232	7284245010022646	CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.obj	e94f0877e6ccb141
 5	151	7290225073089655	CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.obj	79b9f37d733ff060
 1463	1767	7290052727817863	lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj	6e9293091389232f
@@ -9,23 +9,12 @@
 268	409	7284942123403922	lib/algorithms/libalgorithms.a	c7568e2121fd7008
 190	447	7284939404558993	lib/algorithms/CMakeFiles/algorithms.dir/array/array.c.obj	a0e1225ab954837a
 152	289	7290225074455995	lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj	52ee5d08c74cf0b3
-149	268	7290904150756609	lib/data_structures/libdata_structures.a	3c020b82c389c748
-268	427	7290904152292487	EducationProject.exe	b4b48aac565ca27f
-998	1308	7290052723200217	lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj	5c3b4e7aba6efc61
-171	318	7290417844517899	lib/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj	f19ce30024d342c4
-7	148	7290904149539870	lib/data_structures/CMakeFiles/data_structures.dir/vector/vector_void.c.obj	9bcc5b1439b2caab
-4	419	7290904475098641	lib/data_structures/CMakeFiles/data_structures.dir/vector/vector_void.c.obj	9bcc5b1439b2caab
-420	712	7290904478000894	lib/data_structures/libdata_structures.a	3c020b82c389c748
-712	908	7290904479955637	EducationProject.exe	b4b48aac565ca27f
-11	335	7290904915310611	lib/data_structures/CMakeFiles/data_structures.dir/vector/vector_void.c.obj	9bcc5b1439b2caab
-336	611	7290904917933594	lib/data_structures/libdata_structures.a	3c020b82c389c748
-611	829	7290904920167597	EducationProject.exe	b4b48aac565ca27f
-3	150	7290905058068580	lib/data_structures/CMakeFiles/data_structures.dir/vector/vector_void.c.obj	9bcc5b1439b2caab
-150	309	7290905059614441	lib/data_structures/libdata_structures.a	3c020b82c389c748
-309	588	7290905062406954	EducationProject.exe	b4b48aac565ca27f
-5	300	7290905456502339	lib/data_structures/CMakeFiles/data_structures.dir/vector/vector_void.c.obj	9bcc5b1439b2caab
-301	437	7290905457878654	lib/data_structures/libdata_structures.a	3c020b82c389c748
-438	761	7290905460940462	EducationProject.exe	b4b48aac565ca27f
-5	142	7290905933396146	lib/data_structures/CMakeFiles/data_structures.dir/vector/vector_void.c.obj	9bcc5b1439b2caab
 142	328	7290905935241192	lib/data_structures/libdata_structures.a	3c020b82c389c748
 329	769	7290905939360182	EducationProject.exe	b4b48aac565ca27f
+998	1308	7290052723200217	lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj	5c3b4e7aba6efc61
+171	318	7290417844517899	lib/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj	f19ce30024d342c4
+5	142	7290905933396146	lib/data_structures/CMakeFiles/data_structures.dir/vector/vector_void.c.obj	9bcc5b1439b2caab
+15	258	7290909370548071	CMakeFiles/EducationProject.dir/main.c.obj	8b3cebf0b0e21886
+259	451	7290909372632498	lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.obj	d485646fb5ee8cf0
+452	591	7290909374018777	lib/data_structures/libdata_structures.a	53f5e75d32ea8f1f
+592	779	7290909375873819	EducationProject.exe	b4b48aac565ca27f

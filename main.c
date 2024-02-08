@@ -255,7 +255,7 @@ void test(){
 
 */
 
-#include "lib/data_structures/vector/vector_void.h"
+#include "lib/data_structures/vector_void/vector_void.h"
 
 int main() {
     size_t n = 10;

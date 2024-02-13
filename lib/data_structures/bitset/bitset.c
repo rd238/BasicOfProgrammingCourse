@@ -62,7 +62,7 @@ bitset bitsetSymmerticDifference(bitset set1, bitset set2){
 
 bitset bitsetComplement(bitset set){
     unsigned int n = 32 - set.maxValue;
-    return (bitset){(~(uint32_t)0 << n) >> n, set.maxValue};
+    return (bitset){(~set.value << n) >> n, set.maxValue};
 }
 
 
@@ -70,13 +70,15 @@ void bitsetPrint(bitset set) {
     printf("{");
     for (int i = 0; i < set.maxValue; i++) {
         if (set.value & 1 << i)
-            if (1 << (i + 1) > set.value)
+            if (i == set.maxValue - 1)
                 printf("%d", i + 1);
             else
                 printf("%d, ", i + 1);
     }
         printf("}\n");
 }
+
+
 
 
 

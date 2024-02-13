@@ -255,20 +255,40 @@ void test(){
 
 */
 
-#include "lib/data_structures/vector_void/vector_void.h"
 
-int main() {
-    size_t n = 10;
-    vector_void v = vectorVoidCreate(0, sizeof(float));
-    for (int i = 0; i < n; i++) {
-        float x = 0.0 + i;
-        vectorVoidPushBack(&v, &x);
-    }
-    for (int i = 0; i < v.size; i++) {
-        float x;
-        vectorVoidGetValue(&v, i, &x);
-        printf("%f ", x);
-    }
 
-    return 0;
+#include <stdio.h>
+#include "lib/data_structures/matrix/matrix.h"
+
+int main(){
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

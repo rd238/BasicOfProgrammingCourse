@@ -76,6 +76,7 @@ void vectorVoidSetValue(vector_void *v, size_t index, void *source){
 void vectorVoidPopBack(vector_void *v){
     if(v->size > 0){
         v->size--;
+        vectorVoidShrinkToFit(v); // добавлена строка
     }else{
         fprintf(stderr, "vector is empty");
         exit(1);

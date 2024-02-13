@@ -102,6 +102,7 @@ void vectorPopBack(vector *v){
         exit(1);
     }else{
         v->size--;
+        vectorShrinkToFit(v); // добавлено     
     }
 }
 

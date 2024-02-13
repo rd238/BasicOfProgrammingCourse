@@ -41,7 +41,20 @@ void matrixFreeMem(matrix *m);
 void matrixFreeMemArray(matrix *ms, int nMatrices);
 
 
+//Ввод матрицы m.
+void matrixInput(matrix *m);
 
+
+//Ввод массива из nMatrices матриц, хранящейся по адресу ms.
+void matrixInputArray(matrix *ms, int nMatrices);
+
+
+//Вывод матрицы m.
+void matrixOutput(matrix m);
+
+
+//Вывод массива из nMatrices матриц, хранящейся по адресу ms.
+void matrixOutputArray(matrix *ms, int nMatrices);
 
 
 

@@ -39,11 +39,38 @@ void matrixFreeMem(matrix *m){
 
 void matrixFreeMemArray(matrix *ms, int nMatrices){
     for(int i = 0; i < nMatrices; i++)
-        matrixFreeMem(ms[i].values);
+        matrixFreeMem(&ms[i]);
     free(ms);
 }
 
 
+void matrixInput(matrix *m){
+    for(int i = 0; i < m->nRows; i++)
+        for(int j = 0; j < m->nCols; j++)
+            scanf("%d", &m->values[i][j]);
+}
+
+
+void matrixInputArray(matrix *ms, int nMatrices){
+    for(int i = 0; i < nMatrices; i++)
+        matrixInput(&ms[i]);
+}
+
+
+void matrixOutput(matrix m){
+    for(int i = 0; i < m.nRows; i++){
+        for(int j = 0; j < m.nCols; j++)
+            printf("%d ", m.values[i][j]);
+        printf("\n");
+    }
+    printf("\n");
+}
+
+
+void matrixOutputArray(matrix *ms, int nMatrices) {
+    for (int i = 0; i < nMatrices; i++)
+        matrixOutput(ms[i]);
+}
 
 
 

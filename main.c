@@ -261,7 +261,10 @@ void test(){
 #include "lib/data_structures/matrix/matrix.h"
 
 int main(){
-
+    matrix *a = matrixGetMemArray(2,3,3);
+    matrixInputArray(a, 2);
+    matrixOutputArray(a, 2);
+    matrixFreeMemArray(a, 2);
 }
 
 

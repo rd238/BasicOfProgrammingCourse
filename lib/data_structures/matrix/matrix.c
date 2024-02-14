@@ -128,5 +128,56 @@ void matrixSelectionSortColsByColCriteria(matrix m, int (*criteria)(int*, int)){
 }
 
 
+bool matrixIsSquare(matrix *m){
+    return m->nRows == m->nCols;
+}
+
+
+bool matrixIsEqual(matrix *m1, matrix *m2){
+    if(m1->nRows != m2->nRows || m1->nCols != m2->nCols)
+        return 0;
+
+    for(int i = 0; i < m1->nRows; i++){
+        for(int j = 0; j < m1->nCols; j++){
+            if(m1->values[i][j] != m2->values[i][j])
+                return 0;
+        }
+    }
+
+    return 1;
+}
+
+
+bool matrixIsE(matrix *m){
+    if(!matrixIsSquare(m))
+        return 0;
+
+    for(int i = 0; i < m->nRows; i++){
+        for(int j = 0; j < m->nCols; j++){
+            if(i != j && m->values[i][j] != 0)
+                return 0;
+        }
+        if(m->values[i][i] != 1)
+            return 0;
+    }
+
+    return 1;
+}
+
+
+bool matrixIsSymmetric(matrix *m){
+    if(!matrixIsSquare(m))
+        return 0;
+
+    for(int i = 0; i < m->nCols; i++){
+        for(int j = 0; j < m->nRows; j++){
+            if(m->values[i][j] != m->values[j][i])
+                return 0;
+        }
+    }
+
+    return 1;
+}
+
 
 

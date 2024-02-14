@@ -71,8 +71,27 @@ void matrixSelectionSortRowsByRowCriteria(matrix m, int (*criteria)(int*, int));
 
 
 //Выполняет сортировку выбором столбцов матрицы m по неубыванию
-//значения функции criteria применяемой для столбцов
+//значения функции criteria применяемой для столбцов.
 void matrixSelectionSortColsByColCriteria(matrix m, int (*criteria)(int*, int));
+
+
+//Возвращает значение ’истина’, если матрица m является квадратной, ложь – в противном случае.
+bool matrixIsSquare(matrix *m);
+
+
+//Возвращает значение ’истина’, если матрицы m1 и m2 равны, ложь – в противном случае.
+bool matrixIsEqual(matrix *m1, matrix *m2);
+
+
+//Возвращает значение ’истина’, если матрица m является единичной, ложь – в противном случае.
+bool matrixIsE(matrix *m);
+
+
+//Возвращает значение ’истина’, если матрица m является симметричной, ложь – в противном случае.
+bool matrixIsSymmetric(matrix *m);
+
+
+
 
 
 

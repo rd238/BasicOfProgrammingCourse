@@ -268,11 +268,12 @@ int func(int *a, int n){
 }
 
 int main(){
-    matrix a = matrixGetMem(4,4);
+    matrix a = matrixGetMem(3,3);
+    matrix b = matrixGetMem(3,3);
     matrixInput(&a);
-    matrixSelectionSortColsByColCriteria(a, func);
-    matrixOutput(a);
+    printf("%d", matrixIsSymmetric(&a));
     matrixFreeMem(&a);
+    matrixFreeMem(&b);
 }
 
 

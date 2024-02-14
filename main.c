@@ -268,12 +268,11 @@ int func(int *a, int n){
 }
 
 int main(){
-    matrix a = matrixGetMem(3,3);
-    matrix b = matrixGetMem(3,3);
+    matrix a = matrixGetMem(2,5);
     matrixInput(&a);
-    printf("%d", matrixIsSymmetric(&a));
+    matrixTranspose(&a);
+    matrixOutput(a);
     matrixFreeMem(&a);
-    matrixFreeMem(&b);
 }
 
 

@@ -91,8 +91,12 @@ bool matrixIsE(matrix *m);
 bool matrixIsSymmetric(matrix *m);
 
 
+//Транспонирует квадратную матрицу m.
+void matrixTransposeSquare(matrix *m);
 
 
+//Транспонирует матрицу m.
+void matrixTranspose(matrix *m);
 
 
 

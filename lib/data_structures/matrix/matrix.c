@@ -15,7 +15,7 @@ typedef struct position {
 
 
 matrix matrixGetMem(int nRows, int nCols){
-    int **values = (int **) malloc(sizeof(int) * nRows);
+    int **values = (int **) malloc(sizeof(int *) * nRows);
     for(int i = 0; i < nRows; i++)
         values[i] = (int *) malloc(sizeof(int) * nCols);
     return (matrix){values, nRows, nCols};
@@ -178,6 +178,44 @@ bool matrixIsSymmetric(matrix *m){
 
     return 1;
 }
+
+
+void matrixTransposeSquare(matrix *m){
+    if(matrixIsSquare(m)){
+        for(int i = 0; i < m->nCols; i++){
+            for(int j = i + 1; j < m->nRows; j++){
+                int temp = m->values[i][j];
+                m->values[i][j] = m->values[j][i];
+                m->values[j][i] = temp;
+            }
+        }
+    }
+}
+
+
+void matrixTranspose(matrix *m){
+    int **transposed = (int **)malloc(m->nCols * sizeof(int *));
+    for (int i = 0; i < m->nCols; i++) {
+        transposed[i] = (int *)malloc(m->nRows * sizeof(int));
+    }
+    for (int i = 0; i < m->nRows; i++) {
+        for (int j = 0; j < m->nCols; j++) {
+            transposed[j][i] = m->values[i][j];
+        }
+    }
+    for (int i = 0; i < m->nRows; i++) {
+        free(m->values[i]);
+    }
+    free(m->values);
+
+    m->values = transposed;
+    int temp = m->nRows;
+    m->nRows = m->nCols;
+    m->nCols = temp;
+}
+
+
+
 
 
 

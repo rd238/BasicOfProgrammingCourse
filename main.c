@@ -270,7 +270,7 @@ int func(int *a, int n){
 int main(){
     matrix a = matrixGetMem(2,5);
     matrixInput(&a);
-    matrixTranspose(&a);
+    printf("%d %d\n", getMinValuePos(a).rowIndex, getMinValuePos(a).colIndex);
     matrixOutput(a);
     matrixFreeMem(&a);
 }

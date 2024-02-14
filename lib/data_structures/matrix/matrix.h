@@ -99,6 +99,14 @@ void matrixTransposeSquare(matrix *m);
 void matrixTranspose(matrix *m);
 
 
+//Возвращает позицию минимального элемента матрицы m.
+position getMinValuePos(matrix m);
+
+
+//Возвращает позицию максимального элемента матрицы m.
+position getMaxValuePos(matrix m);
+
+
 
 
 

@@ -48,3 +48,9 @@
 176	329	7296364894679187	EducationProject.exe	b4b48aac565ca27f
 6	197	7296365032551148	CMakeFiles/EducationProject.dir/main.c.obj	8b3cebf0b0e21886
 198	415	7296365034874924	EducationProject.exe	b4b48aac565ca27f
+4	259	7296370942745023	CMakeFiles/EducationProject.dir/main.c.obj	8b3cebf0b0e21886
+259	667	7296370946854040	lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj	6f3fef4d5a4b03e7
+667	841	7296370948629292	lib/data_structures/libdata_structures.a	79e4c704d74ba11
+841	1011	7296370950294830	EducationProject.exe	b4b48aac565ca27f
+5	166	7296371279564549	CMakeFiles/EducationProject.dir/main.c.obj	8b3cebf0b0e21886
+167	324	7296371281100428	EducationProject.exe	b4b48aac565ca27f

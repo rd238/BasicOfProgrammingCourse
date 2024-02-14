@@ -215,6 +215,41 @@ void matrixTranspose(matrix *m){
 }
 
 
+position getMinValuePos(matrix m){
+    int rowIndex = 0;
+    int colIndex = 0;
+    int min = m.values[0][0];
+    for(int i = 0; i < m.nRows; i++){
+        for(int j = 0; j < m.nCols; j++){
+            if(min > m.values[i][j]){
+                min = m.values[i][j];
+                rowIndex = i;
+                colIndex = j;
+            }
+        }
+    }
+
+    return (position){rowIndex, colIndex};
+}
+
+position getMaxValuePos(matrix m){
+    int rowIndex = 0;
+    int colIndex = 0;
+    int min = m.values[0][0];
+    for(int i = 0; i < m.nRows; i++){
+        for(int j = 0; j < m.nCols; j++){
+            if(min < m.values[i][j]){
+                min = m.values[i][j];
+                rowIndex = i;
+                colIndex = j;
+            }
+        }
+    }
+
+    return (position){rowIndex, colIndex};
+}
+
+
 
 
 

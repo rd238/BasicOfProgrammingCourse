@@ -261,10 +261,11 @@ void test(){
 #include "lib/data_structures/matrix/matrix.h"
 
 int main(){
-    matrix *a = matrixGetMemArray(2,3,3);
-    matrixInputArray(a, 2);
-    matrixOutputArray(a, 2);
-    matrixFreeMemArray(a, 2);
+    matrix a = matrixGetMem(3,3);
+    matrixInput(&a);
+    matrixSwapColumns(a, 0, 2);
+    matrixOutput(a);
+    matrixFreeMem(&a);
 }
 
 

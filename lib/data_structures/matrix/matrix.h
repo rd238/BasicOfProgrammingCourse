@@ -57,6 +57,19 @@ void matrixOutput(matrix m);
 void matrixOutputArray(matrix *ms, int nMatrices);
 
 
+//Обмен строк с порядковыми номерами i1 и i2 в матрице m.
+void matrixSwapRows(matrix m, int i1, int i2);
+
+
+//Обмен колонок с порядковыми номерами j1 и j2 в матрице m.
+void matrixSwapColumns(matrix m, int j1, int j2);
+
+
+
+
+
+
+
 
 
 

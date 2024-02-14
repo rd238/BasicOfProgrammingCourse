@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
-3.Программно реализовать операции над множествами, используя
+3. Программно реализовать операции над множествами, используя
 следующие способы представления множества в памяти ЭВМ:
 
 а) элементы множества А хранятся в массиве А. Элементы массива А неупорядочены;
@@ -20,59 +20,66 @@
 //Пересечение, Объединение, Разность, Симметрическая разность
 // пункт А: неупорядоченное множество.
 size_t unorderIntersection(int *a, int *b, int *c, size_t an, size_t bn){
-    size_t cn = 0;
+    int size_c = 0;
     for(int i = 0; i < an; i++){
-        int is_orig = 1;
-        for(int j = 0; j < bn; j++) {
-            int is_orig = 1;
-            if (a[i] == b[j]) {
-                int is_orig = 1;
+        int is_finded = 0;
+        for(int j = 0; j < bn; j++){
+            if(a[i] == b[j]) {
+                is_finded = 1;
                 break;
             }
         }
-        if(is_orig)
-            c[cn++] = a[i];
+        for(int k = 0; k < size_c; k++)
+            if(a[i] == c[k]) {
+                is_finded = 0;
+                break;
+            }
+        if(is_finded)
+            c[size_c++] = a[i];
+    }
 
-        }
-    return cn;
+    return size_c;
 }
+
 
 
 size_t unorderUnion(int *a, int *b, int *c, size_t an, size_t bn){
-    size_t cn = 0;
-    for(int i = 0; i < an; i++)
-        c[cn++] = a[i];
-    for(int i = 0; i < bn; i++){
-        int is_orig = 1;
-        for(int j = 0; j < cn; j++){
-            if(b[i] == c[j]){
-                is_orig = 0;
-                break;
-            }
-        }
-        if(is_orig)
-            c[cn++] = b[i];
+    int size_c = 0;
+    for(int i = 0; i < an; i++, size_c++)
+        c[size_c] = a[i];
+    for(int i = 0; i < bn; i++) {
+        int is_original = 1;
+        int ii = 0;
+        for (int j = 0; j < size_c; j++)
+            if (c[j] == b[i])
+                is_original = 0;
+        if (is_original)
+            c[size_c++] = b[i];
+
     }
 
-    return cn;
+    return size_c;
 }
+
 
 
 size_t unorderDifference(int *a, int *b, int *c, size_t an, size_t bn){
-    size_t cn = 0;
-    for(int i = 0; i < an; i++)
-        c[cn++] = a[i];
-    for(int i = 0; i < bn; i++){
-        for(int j = 0; j < cn; j++){
-            if(b[i] == c[j]){
-                c[j] = c[cn-- - 1];
+    int size_c = 0;
+    for(int i = 0; i < an; i++){
+        int is_original = 1;
+        for(int j = 0; j < bn; j++){
+            if(a[i] == b[j]){
+                is_original = 0;
                 break;
             }
         }
+        if(is_original)
+            c[size_c++] = a[i];
     }
 
-    return cn;
+    return size_c;
 }
+
 
 
 size_t unorderSymmetricDifference(int *a, int *b, int *c, size_t an, size_t bn){
@@ -83,32 +90,61 @@ size_t unorderSymmetricDifference(int *a, int *b, int *c, size_t an, size_t bn){
 }
 
 
-//Пересечение, Объединение, Разность, Симметрическая разность
-// пункт Б: упорядоченное множество.
-size_t orderIntersection(int *a, int *b, int *c, size_t an, size_t bn){
-    size_t cn = 0;
-    for(int i = 0; i < an; i++)
-        c[cn++] = a[i];
-    for(int i = 0; i < cn; i++){
-        int is_original = 0;
-        for(int j = 0; j < bn; j++){
-            if(b[j] == c[i]){
-                is_original = 1;
+int unorderIsEqual(int *a, int *b, size_t an, size_t bn) {
+    for (int i = 0; i < bn; i++) {
+        int is_true = 0;
+        for (int j = 0; j < an; j++) {
+            if (b[i] == a[j]) {
+                is_true = 1;
                 break;
             }
         }
-        if(!is_original){
-            for(int i = 0; i < cn - 1; i++){
-                c[i] = c[i + 1];
+        if (is_true == 0)
+            return 0;
+    }
+
+    return 1;
+}
+
+//Пересечение, Объединение, Разность, Симметрическая разность
+// пункт Б: упорядоченное множество.
+int orderIntersection(int *a, int *b, int *c, size_t an, size_t bn){
+    int ind_a = 0, ind_b = 0, size_c = 0;
+    int i = 0;
+    int is_original = 1;
+    while(ind_a < an && ind_b < bn){
+        if(a[ind_a] <= b[ind_b]) {
+            if(a[ind_a] == b[i] && is_original) {
+                c[size_c++] = a[ind_a++];
+                i = 0;
+                is_original = 0;
+            }else if (i == bn || c[i] == a[ind_a]) {
+                ind_a++;
+                i = 0;
+                is_original = 1;
+            }else {
+                i++;
             }
-            cn--;
-            i--;
+        }else {
+            if(b[ind_b] == a[i] && is_original) {
+                c[size_c++] = b[ind_b++];
+                i = 0;
+                is_original = 0;
+            }else if (i == an || c[i] == b[ind_b]) {
+                ind_b++;
+                i = 0;
+                is_original = 1;
+            }else {
+                i++;
+            }
         }
     }
+
+    return size_c;
 }
 
 
-size_t orderUnion(int *a, int *b, int *c, size_t an, size_t bn){
+int orderUnion(int *a, int *b, int *c, size_t an, size_t bn){
     int ind_a = 0, ind_b = 0, size_c = 0;
     while(ind_a < an && ind_b < bn){
         if(a[ind_a] <= b[ind_b])
@@ -121,36 +157,28 @@ size_t orderUnion(int *a, int *b, int *c, size_t an, size_t bn){
     while(ind_b < bn)
         c[size_c++] = b[ind_b++];
 
-    for(int i = 0; i < size_c - 1; i++){
-        if(c[i] == c[i + 1]){
-            for(int j = i + 1; j < size_c; j++)
-                c[j] = c[j + 1];
-            size_c--;
+    return size_c;
+}
+
+
+int orderDifference(int *a, int *b, int *c, size_t an, size_t bn){
+    int ind_a = 0, size_c = 0;
+    int i = 0;
+    while(ind_a < an){
+        if(b[i] == a[ind_a]) {
+            ind_a++;
+            i = 0;
+        }else if(i == bn - 1){
+            c[size_c++] = a[ind_a++];
+            i = 0;
+        }else{
+            i++;
         }
     }
 
     return size_c;
 }
 
-
-size_t orderDifference(int *a, int *b, int *c, size_t an, size_t bn){
-    size_t cn = 0;
-    for(int i = 0; i < an; i++)
-        c[cn++] = a[i];
-    for(int i = 0; i < bn; i++){
-        for(int j = 0; j < cn; j++){
-            if(c[j] == b[i]){
-                for(int ss = j; ss < cn; ss++){
-                    c[ss] = c[ss + 1];
-                }
-                cn--;
-                break;
-            }
-        }
-    }
-
-    return cn;
-}
 
 
 size_t orderSymmetricDifference(int *a, int *b, int *c, size_t an, size_t bn){
@@ -173,6 +201,26 @@ size_t orderSymmetricDifference(int *a, int *b, int *c, size_t an, size_t bn){
     }
 
     return first;
+}
+
+
+int orderIsEqual(int *a, int *b, size_t an, size_t bn){
+    int sizeb = 0;
+    int i = 0;
+    while(sizeb != bn){
+        if(i == an)
+            return 0;
+        if(a[i] == b[sizeb]){
+            sizeb++;
+            i = 0;
+            continue;
+        }else{
+            i++;
+        }
+    }
+
+
+    return 1;
 }
 
 

@@ -73,5 +73,21 @@ void matrixOutputArray(matrix *ms, int nMatrices) {
 }
 
 
+void matrixSwapRows(matrix m, int i1, int i2){
+    int *temp = m.values[i1];
+    m.values[i1] = m.values[i2];
+    m.values[i2] = temp;
+}
+
+
+void matrixSwapColumns(matrix m, int j1, int j2){
+    for(int i = 0; i < m.nCols; i++) {
+        int pa = m.values[i][j2];
+        m.values[i][j2] = m.values[i][j1];
+        m.values[i][j1] = pa;
+    }
+}
+
+
 
 

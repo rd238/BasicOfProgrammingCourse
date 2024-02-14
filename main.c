@@ -260,10 +260,17 @@ void test(){
 #include <stdio.h>
 #include "lib/data_structures/matrix/matrix.h"
 
+int func(int *a, int n){
+    int sum = 0;
+    for(int i = 0; i < n; i++)
+        sum += a[i];
+    return sum;
+}
+
 int main(){
-    matrix a = matrixGetMem(3,3);
+    matrix a = matrixGetMem(4,4);
     matrixInput(&a);
-    matrixSwapColumns(a, 0, 2);
+    matrixSelectionSortColsByColCriteria(a, func);
     matrixOutput(a);
     matrixFreeMem(&a);
 }

@@ -65,6 +65,14 @@ void matrixSwapRows(matrix m, int i1, int i2);
 void matrixSwapColumns(matrix m, int j1, int j2);
 
 
+//Выполняет сортировку вставками строк матрицы m по неубыванию
+//значения функции criteria применяемой для строк.
+void matrixSelectionSortRowsByRowCriteria(matrix m, int (*criteria)(int*, int));
+
+
+//Выполняет сортировку выбором столбцов матрицы m по неубыванию
+//значения функции criteria применяемой для столбцов
+void matrixSelectionSortColsByColCriteria(matrix m, int (*criteria)(int*, int));
 
 
 

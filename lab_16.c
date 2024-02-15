@@ -74,11 +74,42 @@ void zadanie4(){
     matrixOutput(a);
     matrixFreeMem(&a);
 }
+
+
+void zadanie5(){
+/*
+5. Дана квадратная матрица. Если среди сумм элементов строк матрицы нет равных,
+   то транспонировать матрицу.
+*/
+    matrix a = matrixGetMem(3, 3);
+    matrixInput(&a);
+    int e[a.nCols];
+    for(int i = 0; i < a.nRows; i++){
+        int sum = 0;
+        for(int j = 0; j < a.nCols; j++)
+            sum += a.values[i][j];
+        e[i] = sum;
+    }
+    int is_original = 1;
+    for(int i = 0; i < a.nCols - 1 && is_original; i++){
+        for(int j = i + 1; j < a.nCols; j++) {
+            if (e[i] == e[j]) {
+                is_original = 0;
+                break;
+            }
+        }
+    }
+    if(is_original)
+        matrixTransposeSquare(&a);
+    matrixOutput(a);
+    matrixFreeMem(&a);
+}
 int main(){
     //zadanie1();
     //zadanie2();
     //zadanie3();
-    zadanie4();
+    //zadanie4();
+    zadanie5();
 
 
 }

@@ -58,10 +58,27 @@ void zadanie3(){
     matrixOutput(a);
     matrixFreeMem(&a);
 }
+
+
+void zadanie4(){
+/*
+4. Если данная квадратная матрица A симметрична, то заменить A ее квадратом (A2).
+*/
+    matrix a = matrixGetMem(3, 3);
+    matrixInput(&a);
+    if(matrixIsSquare(&a) && matrixIsSymmetric(&a)){
+        for(int i = 0; i < a.nRows; i++)
+            for(int j = 0; j < a.nCols; j++)
+                a.values[i][j] *= a.values[i][j];
+    }
+    matrixOutput(a);
+    matrixFreeMem(&a);
+}
 int main(){
     //zadanie1();
     //zadanie2();
-    zadanie3();
+    //zadanie3();
+    zadanie4();
 
 
 }

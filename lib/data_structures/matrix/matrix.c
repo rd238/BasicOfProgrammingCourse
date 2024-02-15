@@ -1,18 +1,5 @@
 #include "matrix.h"
 
-/*
-typedef struct matrix {
-    int **values; // элементы матрицы
-    int nRows; // количество рядов
-    int nCols; // количество столбцов
-} matrix;
-
-typedef struct position {
-    int rowIndex;
-    int colIndex;
-} position;
- */
-
 
 matrix matrixGetMem(int nRows, int nCols){
     int **values = (int **) malloc(sizeof(int *) * nRows);
@@ -215,7 +202,7 @@ void matrixTranspose(matrix *m){
 }
 
 
-position getMinValuePos(matrix m){
+position matrixGetMinValuePos(matrix m){
     int rowIndex = 0;
     int colIndex = 0;
     int min = m.values[0][0];
@@ -232,7 +219,7 @@ position getMinValuePos(matrix m){
     return (position){rowIndex, colIndex};
 }
 
-position getMaxValuePos(matrix m){
+position matrixGetMaxValuePos(matrix m){
     int rowIndex = 0;
     int colIndex = 0;
     int min = m.values[0][0];

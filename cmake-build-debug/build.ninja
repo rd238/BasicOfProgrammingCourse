@@ -73,6 +73,12 @@ build CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.obj: C
   OBJECT_DIR = CMakeFiles\EducationProject.dir
   OBJECT_FILE_DIR = CMakeFiles\EducationProject.dir\lib\data_structures\bitset
 
+build CMakeFiles/EducationProject.dir/lab_16.c.obj: C_COMPILER__EducationProject_unscanned_Debug C$:/Users/Master/CLionProjects/EducationProject/lab_16.c || cmake_object_order_depends_target_EducationProject
+  DEP_FILE = CMakeFiles\EducationProject.dir\lab_16.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EducationProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\EducationProject.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target EducationProject
@@ -81,7 +87,7 @@ build CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.obj: C
 #############################################
 # Link the executable EducationProject.exe
 
-build EducationProject.exe: C_EXECUTABLE_LINKER__EducationProject_Debug CMakeFiles/EducationProject.dir/main.c.obj CMakeFiles/EducationProject.dir/lib/algorithms/array/array.c.obj CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.obj CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.obj | lib/algorithms/libalgorithms.a lib/algorithms/libalgorithms.a lib/data_structures/libdata_structures.a || lib/algorithms/libalgorithms.a lib/data_structures/libdata_structures.a
+build EducationProject.exe: C_EXECUTABLE_LINKER__EducationProject_Debug CMakeFiles/EducationProject.dir/main.c.obj CMakeFiles/EducationProject.dir/lib/algorithms/array/array.c.obj CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.obj CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.obj CMakeFiles/EducationProject.dir/lab_16.c.obj | lib/algorithms/libalgorithms.a lib/algorithms/libalgorithms.a lib/data_structures/libdata_structures.a || lib/algorithms/libalgorithms.a lib/data_structures/libdata_structures.a
   FLAGS = -g
   LINK_LIBRARIES = lib/algorithms/libalgorithms.a  lib/algorithms/libalgorithms.a  lib/data_structures/libdata_structures.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\EducationProject.dir

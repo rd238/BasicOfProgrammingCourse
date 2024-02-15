@@ -255,7 +255,7 @@ void test(){
 
 */
 
-
+/*
 
 #include <stdio.h>
 #include "lib/data_structures/matrix/matrix.h"
@@ -274,6 +274,16 @@ int main(){
     matrixOutput(a);
     matrixFreeMem(&a);
 }
+*/
+
+
+
+
+
+
+
+
+
 
 
 

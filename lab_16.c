@@ -104,13 +104,36 @@ void zadanie5(){
     matrixOutput(a);
     matrixFreeMem(&a);
 }
+
+
+
+bool zadanie6(){
+/*
+6. Даны две квадратные матрицы A и B. Определить, являются ли они взаимно
+   обратными (A = B^(−1)).
+*/
+    matrix a = matrixGetMem(3, 3);
+    matrix b = matrixGetMem(3, 3);
+    matrix c = matrixGetMem(3, 3);
+    matrixInput(&a);
+    matrixInput(&b);
+    for(int i = 0; i < a.nCols; i++){
+        for(int j = 0; j < a.nRows; j++){
+            c.values[i][j] = a.values[i][j] * b.values[j][i];
+        }
+    }
+    int ret = matrixIsE(&c);
+    matrixFreeMem(&a);
+    matrixFreeMem(&b);
+    matrixFreeMem(&c);
+}
 int main(){
     //zadanie1();
     //zadanie2();
     //zadanie3();
     //zadanie4();
-    zadanie5();
-
+    //zadanie5();
+    printf("%d", zadanie6());
 
 }
 

@@ -68,8 +68,8 @@ void matrixSwapRows(matrix m, int i1, int i2){
 
 
 void matrixSwapColumns(matrix m, int j1, int j2){
-    for(int i = 0; i < m.nCols; i++) {
-        int pa = m.values[i][j2];
+    for(int i = 0; i < m.nRows; i++) {
+            int pa = m.values[i][j2];
         m.values[i][j2] = m.values[i][j1];
         m.values[i][j1] = pa;
     }
@@ -97,17 +97,20 @@ void matrixSelectionSortColsByColCriteria(matrix m, int (*criteria)(int*, int)){
         int jj = i;
 
         int a[m.nRows];
-        for(int j = 0; j < m.nCols; j++)
+        for(int j = 0; j < m.nRows; j++)
             a[j] = m.values[j][i];
 
         for(int j = i + 1; j < m.nCols; j++){
 
             int b[m.nRows];
-            for(int k = 0; k < m.nCols; k++)
+            for(int k = 0; k < m.nRows; k++)
                 b[k] = m.values[k][j];
 
-            if(criteria(a, m.nRows) > criteria(b, m.nRows))
+            if(criteria(a, m.nRows) > criteria(b, m.nRows)) {
                 jj = j;
+                for(int i = 0; i < m.nRows; i++)
+                    a[i] = b[i];
+            }
         }
         if(jj != i)
             matrixSwapColumns(m, i, jj);

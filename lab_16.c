@@ -37,9 +37,63 @@ void zadanie2(){
 
 }
 
+
+
+int func1(int *a, int n){
+    int max =a[0];
+    for(int i = 0; i < n; i++)
+        if(max > a[i])
+            max = a[i];
+    return max;
+}
+
+void zadanie3(){
+/*
+3. Дана прямоугольная матрица. Упорядочить столбцы матрицы по неубыванию
+минимальных элементов столбцов:
+*/
+    matrix  a = matrixGetMem(3, 6);
+    matrixInput(&a);
+    matrixSelectionSortColsByColCriteria(a, func1);
+    matrixOutput(a);
+    matrixFreeMem(&a);
+}
 int main(){
     //zadanie1();
-    zadanie2();
+    //zadanie2();
+    zadanie3();
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

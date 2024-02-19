@@ -126,14 +126,54 @@ bool zadanie6(){
     matrixFreeMem(&a);
     matrixFreeMem(&b);
     matrixFreeMem(&c);
+    return ret;
 }
+
+
+int zadanie7(){
+/*
+Дана прямоугольная матрица. Назовем псевдодиагональю множество элементов
+этой матрицы, лежащих на прямой, параллельной прямой, содержащей
+элементы ai,i. Найти сумму максимальных элементов всех псевдодиагоналей
+данной матрицы.
+*/
+    matrix a = matrixGetMem(3, 4);
+    //matrix b = matrixGetMem(a.nRows, a.nCols - 1);
+    matrixInput(&a);
+    /*for(int i = 0; i < a.nRows; i++){
+        int k = 0;
+        for(int j = 0; j < a.nCols; j++)
+            if(i != j)
+                b.values[i][k++] = a.values[i][j];
+    }
+    */
+    int sum = 0;
+    for (int k = 0; k < a.nRows + a.nCols - 1; k++) {
+        int max = a.values[k < a.nRows ? k : a.nRows - 1][k < a.nRows ? 0 : k - a.nRows + 1];
+        for (int i = (k < a.nRows ? k : a.nRows - 1), j = (k < a.nRows ? 0 : k - a.nRows + 1); i >= 0 && j < a.nCols; i--, j++) {
+            if (a.values[i][j] > max) {
+                max = a.values[i][j];
+            }
+        }
+        sum += max;
+    }
+    printf("%d", --sum);
+
+    matrixFreeMem(&a);
+    matrixFreeMem(&b);
+
+
+
+}
+
 int main(){
     //zadanie1();
     //zadanie2();
     //zadanie3();
     //zadanie4();
     //zadanie5();
-    printf("%d", zadanie6());
+    //printf("%d", zadanie6());
+    zadanie7();
 
 }
 

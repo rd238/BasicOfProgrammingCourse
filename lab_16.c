@@ -160,10 +160,37 @@ int zadanie7(){
     printf("%d", --sum);
 
     matrixFreeMem(&a);
-    matrixFreeMem(&b);
+    //matrixFreeMem(&b);
+}
 
 
 
+void zadanie8(){
+/*
+Дана прямоугольная матрица, все элементы которой различны. Найти мини-
+мальный элемент матрицы в выделенной области:
+*/
+    matrix a = matrixGetMem(4, 3);
+    matrixInput(&a);
+    position ap = matrixGetMaxValuePos(a);
+    int min = 1000000;
+    int b = 0;
+    for(int i = 0, j = 0; i < a.nRows && j >= 0; i++){
+        if(b) {
+            j--;
+        }else {
+            j = a.nRows - ap.colIndex - i;
+        }
+        if(j == a.nRows)
+            b = 1;
+        for(int k = 0; k < j; k++){
+            if(a.values[k][i] < min)
+                min = a.values[k][i];
+        }
+    }
+
+    printf("%d", min);
+    matrixFreeMem(&a);
 }
 
 int main(){
@@ -173,7 +200,8 @@ int main(){
     //zadanie4();
     //zadanie5();
     //printf("%d", zadanie6());
-    zadanie7();
+    //zadanie7();
+    zadanie8();
 
 }
 

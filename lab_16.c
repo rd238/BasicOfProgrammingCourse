@@ -194,6 +194,10 @@ void zadanie8(){
 }
 
 
+
+
+
+
 #include <math.h>
 float getDistance(int *a, int n){
     int d = 0;
@@ -226,6 +230,40 @@ void zadanie9(){
     matrixFreeMem(&a);
 }
 
+
+
+
+
+void zadanie10(){
+/*
+Определить количество классов эквивалентных строк данной прямоугольной
+матрицы. Строки считать эквивалентными, если равны суммы их элементов.
+Указание: задача сводится к тому, чтобы подсчитать количество уникальных
+сумм строк матрицы.
+*/
+    matrix a = matrixGetMem(6, 2);
+    matrixInput(&a);
+    int equal_class = 0;
+    for(int i = 0; i < a.nRows - 1; i++){
+        int sum = 0;
+        for(int j = 0; j < a.nCols; j++){
+            sum += a.values[i][j];
+        }
+        int sum1 = 0;
+        for(int j = i + 1; j < a.nRows; j++){
+            for(int k = 0; k < a.nCols; k++){
+                sum1 += a.values[j][k];
+            }
+        }
+        if(sum != sum1) {
+            i++;
+            equal_class++;
+        }
+    }
+    printf("%d", equal_class);
+    matrixFreeMem(&a);
+}
+
 int main(){
     //zadanie1();
     //zadanie2();
@@ -235,7 +273,8 @@ int main(){
     //printf("%d", zadanie6());
     //zadanie7();
     //zadanie8();
-    zadanie9();
+    //zadanie9();
+    zadanie10();
 }
 
 

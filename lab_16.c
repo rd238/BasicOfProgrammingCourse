@@ -402,6 +402,26 @@ void zadanie15(){
     matrixFreeMemArray(a, 4);
 }
 
+
+
+void zadanie18(){
+/*
+*Дана целочисленная квадратная матрица, все элементы которой различны.
+Найти скалярное произведение строки, в которой находится наибольший элемент
+матрицы, на столбец с наименьшим элементом.
+*/
+    matrix a = matrixGetMem(3, 3);
+    matrixInput(&a);
+    position min = matrixGetMinValuePos(a);
+    position max = matrixGetMaxValuePos(a);
+    int product = 0;
+    for(int i = 0; i < a.nRows; i++){
+        product += a.values[max.rowIndex][i] * a.values[i][min.colIndex];
+    }
+    printf("%d", product);
+    matrixFreeMem(&a);
+}
+
 int main(){
     //zadanie1();
     //zadanie2();
@@ -417,7 +437,8 @@ int main(){
     //zadanie12();
     //zadanie13();
     //zadanie14();
-    zadanie15();
+    //zadanie15();
+    zadanie18();
 }
 
 

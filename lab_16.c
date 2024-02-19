@@ -264,6 +264,37 @@ void zadanie10(){
     matrixFreeMem(&a);
 }
 
+
+
+
+void zadanie11(){
+/*
+Дана матрица. Определить k – количество "особых" элементов матрицы, считая
+элемент "особым", если он больше суммы остальных элементов своего столбца.
+*/
+    matrix a = matrixGetMem(3, 4);
+    matrixInput(&a);
+    int element = 0;
+    for(int i = 0; i < a.nCols; i++){
+        int aa[a.nRows];
+        for(int j = 0; j < a.nRows; j++){
+            aa[j] = a.values[j][i];
+        }
+        int max = aa[0];
+        int sum = aa[0];
+        for(int j = 1; j < a.nRows; j++){
+            if(aa[j] > max)
+                max = aa[j];
+            sum += aa[j];
+        }
+        if(sum - max < max)
+            element++;
+    }
+
+    printf("%d", element);
+
+    matrixFreeMem(&a);
+}
 int main(){
     //zadanie1();
     //zadanie2();
@@ -274,7 +305,8 @@ int main(){
     //zadanie7();
     //zadanie8();
     //zadanie9();
-    zadanie10();
+    //zadanie10();
+    zadanie11();
 }
 
 

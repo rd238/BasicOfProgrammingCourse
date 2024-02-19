@@ -378,6 +378,30 @@ void zadanie14(){
     matrixFreeMemArray(a, 5);
 }
 
+
+
+
+
+void zadanie15(){
+/*
+Дан массив целочисленных квадратных матриц. Вывести матрицы с наименьшей
+нормой. В качестве нормы матрицы взять максимум абсолютных величин ее элементов.
+*/
+    matrix *a = matrixGetMemArray(4, 3, 3);
+    matrixInputArray(a, 4);
+    int min_index = 0;
+    int min_value = 10000;
+    for(int k = 0; k < 4; k++){
+        position ap = matrixGetMinValuePos(a[k]);
+        if(a[k].values[ap.rowIndex][ap.colIndex] < min_value) {
+            min_value = a[k].values[ap.rowIndex][ap.colIndex];
+            min_index = k;
+        }
+    }
+    matrixOutput(a[min_index]);
+    matrixFreeMemArray(a, 4);
+}
+
 int main(){
     //zadanie1();
     //zadanie2();
@@ -392,7 +416,8 @@ int main(){
     //zadanie11();
     //zadanie12();
     //zadanie13();
-    zadanie14();
+    //zadanie14();
+    zadanie15();
 }
 
 

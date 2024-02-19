@@ -345,6 +345,39 @@ void zadanie13(){
     matrixFreeMemArray(a, 4);
 }
 
+
+
+void zadanie14(){
+/*
+Дан массив целочисленных матриц. Вывести матрицы, имеющие наибольшее
+число нулевых строк
+*/
+    matrix *a = matrixGetMemArray(5, 3, 2);
+    matrixInputArray(a, 5);
+    int aa[5];
+    int size = 0;
+    for(int k = 0; k < 5; k++){
+        int rows = 0;
+        for(int i = 0; i < a->nRows; i++){
+            int b = 1;
+            for(int j = 0; j < a->nCols; j++){
+                if(a[k].values[i][j] != 0){
+                    b = 0;
+                    break;
+                }
+            }
+            if(b)
+                rows++;
+        }
+        if(rows > 1)
+            aa[size++] = k;
+    }
+    for(int i = 0; i < size; i++){
+        matrixOutput(a[aa[i]]);
+    }
+    matrixFreeMemArray(a, 5);
+}
+
 int main(){
     //zadanie1();
     //zadanie2();
@@ -358,7 +391,8 @@ int main(){
     //zadanie10();
     //zadanie11();
     //zadanie12();
-    zadanie13();
+    //zadanie13();
+    zadanie14();
 }
 
 

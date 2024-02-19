@@ -301,6 +301,10 @@ void zadanie11(){
 
 
 void zadanie12(){
+/*
+Дана квадратная матрица. Заменить предпоследнюю строку матрицы первым
+из столбцов, в котором находится минимальный элемент матрицы.
+*/
     matrix a = matrixGetMem(3,3);
     matrixInput(&a);
     position ap = matrixGetMinValuePos(a);
@@ -310,6 +314,37 @@ void zadanie12(){
     matrixOutput(a);
     matrixFreeMem(&a);
 }
+
+
+
+
+void zadanie13(){
+/*
+Дан массив матриц одного размера. Определить число матриц, строки кото-
+рых упорядочены по неубыванию элементов
+*/
+    matrix *a = matrixGetMemArray(4, 2, 2);
+    matrixInputArray(a, 4);
+    for(int k = 0; k < 4; k++){
+        int is_sorted = 1;
+        for(int i = 0; i < a->nRows; i++){
+            int br = 0;
+            for(int j = 0; j < a->nCols - 1; j++){
+                if(a[k].values[i][j] > a[k].values[i][j + 1]){
+                    br = 1;
+                    is_sorted = 0;
+                    break;
+                }
+            }
+            if(br)
+                break;
+        }
+        if(is_sorted)
+            matrixOutput(a[k]);
+    }
+    matrixFreeMemArray(a, 4);
+}
+
 int main(){
     //zadanie1();
     //zadanie2();
@@ -322,7 +357,8 @@ int main(){
     //zadanie9();
     //zadanie10();
     //zadanie11();
-    zadanie12();
+    //zadanie12();
+    zadanie13();
 }
 
 

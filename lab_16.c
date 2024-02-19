@@ -295,6 +295,21 @@ void zadanie11(){
 
     matrixFreeMem(&a);
 }
+
+
+
+
+
+void zadanie12(){
+    matrix a = matrixGetMem(3,3);
+    matrixInput(&a);
+    position ap = matrixGetMinValuePos(a);
+    for(int i = a.nRows - 1, j = a.nCols - 1; j >= 0; j--){
+        a.values[a.nRows - 2][j] = a.values[j][ap.rowIndex];
+    }
+    matrixOutput(a);
+    matrixFreeMem(&a);
+}
 int main(){
     //zadanie1();
     //zadanie2();
@@ -306,7 +321,8 @@ int main(){
     //zadanie8();
     //zadanie9();
     //zadanie10();
-    zadanie11();
+    //zadanie11();
+    zadanie12();
 }
 
 

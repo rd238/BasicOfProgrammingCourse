@@ -275,7 +275,7 @@ int main(){
     matrixFreeMem(&a);
 }
 */
-
+/*
 #include "lib/data_structures/string_/string_.h"
 int func(int a){
     return 1 % 2;
@@ -290,7 +290,7 @@ int main(){
     *result = '\0';
     printf("%s\n", destination);
 }
-
+*/
 
 
 

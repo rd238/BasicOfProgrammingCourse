@@ -56,3 +56,13 @@
 373	636	7302114475760720	EducationProject.exe	81cf2a33ef633cc3
 5	148	7302114675945249	CMakeFiles/EducationProject.dir/main.c.obj	8b3cebf0b0e21886
 149	302	7302114677441238	EducationProject.exe	81cf2a33ef633cc3
+4	134	7302132182484140	CMakeFiles/EducationProject.dir/main.c.obj	8b3cebf0b0e21886
+135	304	7302132184169638	lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj	9cda0a8c7731139a
+305	949	7302132190592456	lib/data_structures/libdata_structures.a	25703791e3d91fb3
+949	1224	7302132193065828	EducationProject.exe	81cf2a33ef633cc3
+5	204	7302132248597315	CMakeFiles/EducationProject.dir/main.c.obj	8b3cebf0b0e21886
+205	475	7302132251050730	EducationProject.exe	81cf2a33ef633cc3
+5	229	7302132359799851	CMakeFiles/EducationProject.dir/main.c.obj	8b3cebf0b0e21886
+230	541	7302132362702073	EducationProject.exe	81cf2a33ef633cc3
+5	133	7302132561709755	CMakeFiles/EducationProject.dir/main.c.obj	8b3cebf0b0e21886
+134	302	7302132563405190	EducationProject.exe	81cf2a33ef633cc3

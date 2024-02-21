@@ -279,8 +279,9 @@ int main(){
 #include "lib/data_structures/string_/string_.h"
 
 int main(){
-    char *a = "    1234";
-    printf("%s\n", strFindSpaceReverse(a+8, a));
+    char *a = "123";
+    char *b = "1234";
+    printf("%d\n", strCmp(a,b));
     for(int i = 0; i < strLen(a); i++)
         printf("%c", a[i]);
 }

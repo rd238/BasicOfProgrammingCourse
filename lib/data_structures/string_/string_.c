@@ -42,3 +42,10 @@ char* strFindSpaceReverse(char *rbegin, const char *rend){
         rbegin--;
     return rbegin;
 }
+
+
+int strCmp(const char *lhs, const char *rhs){
+    while(*lhs && *rhs && *lhs == *rhs)
+        lhs++, rhs++;
+    return *lhs - *rhs;
+}

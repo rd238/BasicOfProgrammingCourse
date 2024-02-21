@@ -277,13 +277,18 @@ int main(){
 */
 
 #include "lib/data_structures/string_/string_.h"
-
+int func(int a){
+    return 1 % 2;
+}
 int main(){
-    char *a = "123";
-    char *b = "1234";
-    printf("%d\n", strCmp(a,b));
-    for(int i = 0; i < strLen(a); i++)
-        printf("%c", a[i]);
+    const char source[] = "987654 321012";
+    char destination[20];
+
+    char* end = source + 5;
+
+    char* result = strCopyIfReverse(end + 7, source - 1, destination, func);
+    *result = '\0';
+    printf("%s\n", destination);
 }
 
 

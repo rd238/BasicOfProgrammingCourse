@@ -1,3 +1,5 @@
+
+
 #include <stdio.h>
 #include "lib/data_structures/matrix/matrix.h"
 
@@ -138,19 +140,12 @@ int zadanie7(){
 данной матрицы.
 */
     matrix a = matrixGetMem(3, 4);
-    //matrix b = matrixGetMem(a.nRows, a.nCols - 1);
     matrixInput(&a);
-    /*for(int i = 0; i < a.nRows; i++){
-        int k = 0;
-        for(int j = 0; j < a.nCols; j++)
-            if(i != j)
-                b.values[i][k++] = a.values[i][j];
-    }
-    */
     int sum = 0;
     for (int k = 0; k < a.nRows + a.nCols - 1; k++) {
         int max = a.values[k < a.nRows ? k : a.nRows - 1][k < a.nRows ? 0 : k - a.nRows + 1];
-        for (int i = (k < a.nRows ? k : a.nRows - 1), j = (k < a.nRows ? 0 : k - a.nRows + 1); i >= 0 && j < a.nCols; i--, j++) {
+        for (int i = (k < a.nRows ? k : a.nRows - 1),
+                j = (k < a.nRows ? 0 : k - a.nRows + 1); i >= 0 && j < a.nCols; i--, j++) {
             if (a.values[i][j] > max) {
                 max = a.values[i][j];
             }
@@ -160,7 +155,6 @@ int zadanie7(){
     printf("%d", --sum);
 
     matrixFreeMem(&a);
-    //matrixFreeMem(&b);
 }
 
 
@@ -201,16 +195,14 @@ void zadanie8(){
 #include <math.h>
 float getDistance(int *a, int n){
     int d = 0;
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < n; i++)
         d += a[i] * a[i];
-    }
     return sqrtf(d);
 }
 void zadanie9(){
 /*
 Дано n точек в m-мерном пространстве. Упорядочить точки по неубыванию их
-расстояний до начала координат. Расстояние до начала координат находится
-как
+расстояний до начала координат.
 */
     matrix a = matrixGetMem(5, 5);
     matrixInput(&a);
@@ -421,7 +413,7 @@ void zadanie18(){
     printf("%d", product);
     matrixFreeMem(&a);
 }
-
+/*
 int main(){
     //zadanie1();
     //zadanie2();
@@ -438,9 +430,9 @@ int main(){
     //zadanie13();
     //zadanie14();
     //zadanie15();
-    zadanie18();
+    //zadanie18();
 }
-
+*/
 
 
 

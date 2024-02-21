@@ -276,7 +276,12 @@ int main(){
 }
 */
 
+#include "lib/data_structures/string_/string_.h"
 
+int main(){
+    char a[5] = "123";
+    printf("%d", strLen(a));
+}
 
 
 

@@ -9,7 +9,7 @@ void zadanie1(){
 /*
 удалить из строки все пробельные символы.
 */
-    char a[] = "Hello world  ";
+    char a[] = "H  e  ll o wo rl d  ";
     char *end = a + strLen(a);
     char *dest = strCopyIf(a, end, a, predicate1);
     *dest = '\0';
@@ -18,9 +18,31 @@ void zadanie1(){
 }
 
 
-
+void removeAdjacentEqualLetters(char *s){
+/*
+Преобразовать строку, оставляя только один символ в каждой
+последовательности подряд идущих одинаковых символов
+*/
+    char *snext = s + 1;
+    char *sfirst = s;
+    char *sfirst2 = s - 1;
+    while(*snext != '\0'){
+        if(*sfirst2 != *snext){
+            *sfirst2 = *snext;
+            *sfirst = *snext;
+            sfirst++;
+        }
+        snext++;
+    }
+    *sfirst = '\0';
+}
 
 
 int main(){
-    zadanie1();
+    //zadanie1();
+
+
+    char a[] = "aaadddssswwwrrrrrrr";
+    removeAdjacentEqualLetters(a);
+    printf("%s", a);
 }

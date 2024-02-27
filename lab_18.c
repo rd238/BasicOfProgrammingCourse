@@ -42,7 +42,21 @@ int main(){
     //zadanie1();
 
 
-    char a[] = "aaadddssswwwrrrrrrr";
-    removeAdjacentEqualLetters(a);
-    printf("%s", a);
+    //char a[] = "aaadddssswwwrrrrrrr";
+    //removeAdjacentEqualLetters(a);
+    //printf("%s", a);
+
+
+    char a[] = "hello123 123hello h1e2ll3o privet5";
+    WordDescriptor word;
+    char *aa = a;
+    while(strGetWord(aa, &word)){
+        aa = word.end;
+        for(char *i = word.begin; i < word.end; i++){
+            printf("%c", *i);
+        }
+        printf("\n");
+    }
+
+
 }

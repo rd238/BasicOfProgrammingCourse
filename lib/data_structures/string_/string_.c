@@ -83,3 +83,12 @@ char* strCopyIfReverse(char *rbeginSource, const char *rendSource, char *beginDe
     }
     return beginDestination;
 }
+
+
+int strGetWord(char *beginSearch, WordDescriptor *word) {
+    word->begin = strFindNonSpace(beginSearch);
+    if (*word->begin == '\0')
+        return 0;
+    word->end = strFindSpace(word->begin);
+    return 1;
+}

@@ -1,11 +1,11 @@
-C:/Users/Master/CLionProjects/EducationProject/cmake-build-debug/CMakeFiles/EducationProject.dir
-C:/Users/Master/CLionProjects/EducationProject/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Master/CLionProjects/EducationProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Master/CLionProjects/EducationProject/cmake-build-debug/lib/CMakeFiles/edit_cache.dir
-C:/Users/Master/CLionProjects/EducationProject/cmake-build-debug/lib/CMakeFiles/rebuild_cache.dir
-C:/Users/Master/CLionProjects/EducationProject/cmake-build-debug/lib/algorithms/CMakeFiles/algorithms.dir
-C:/Users/Master/CLionProjects/EducationProject/cmake-build-debug/lib/algorithms/CMakeFiles/edit_cache.dir
-C:/Users/Master/CLionProjects/EducationProject/cmake-build-debug/lib/algorithms/CMakeFiles/rebuild_cache.dir
-C:/Users/Master/CLionProjects/EducationProject/cmake-build-debug/lib/data_structures/CMakeFiles/data_structures.dir
-C:/Users/Master/CLionProjects/EducationProject/cmake-build-debug/lib/data_structures/CMakeFiles/edit_cache.dir
-C:/Users/Master/CLionProjects/EducationProject/cmake-build-debug/lib/data_structures/CMakeFiles/rebuild_cache.dir
+D:/CLion 2023.3.4/Projects/cmake-build-debug/CMakeFiles/EducationProject.dir
+D:/CLion 2023.3.4/Projects/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/CLion 2023.3.4/Projects/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/CLion 2023.3.4/Projects/cmake-build-debug/lib/CMakeFiles/edit_cache.dir
+D:/CLion 2023.3.4/Projects/cmake-build-debug/lib/CMakeFiles/rebuild_cache.dir
+D:/CLion 2023.3.4/Projects/cmake-build-debug/lib/algorithms/CMakeFiles/algorithms.dir
+D:/CLion 2023.3.4/Projects/cmake-build-debug/lib/algorithms/CMakeFiles/edit_cache.dir
+D:/CLion 2023.3.4/Projects/cmake-build-debug/lib/algorithms/CMakeFiles/rebuild_cache.dir
+D:/CLion 2023.3.4/Projects/cmake-build-debug/lib/data_structures/CMakeFiles/data_structures.dir
+D:/CLion 2023.3.4/Projects/cmake-build-debug/lib/data_structures/CMakeFiles/edit_cache.dir
+D:/CLion 2023.3.4/Projects/cmake-build-debug/lib/data_structures/CMakeFiles/rebuild_cache.dir

@@ -65,6 +65,15 @@ char* strCopyIfReverse(char *rbeginSource, const char *rendSource, char *beginDe
 
 
 
+typedef struct WordDescriptor {
+    char *begin;        // позиция начала слова
+    char *end;          // позиция первого символа, после последнего символа слова
+} WordDescriptor;
+
+
+
+int strGetWord(char *beginSearch, WordDescriptor *word);
+
 
 
 

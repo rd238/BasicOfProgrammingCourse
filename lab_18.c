@@ -42,21 +42,31 @@ int main(){
     //zadanie1();
 
 
+
+    //zadanie 2
     //char a[] = "aaadddssswwwrrrrrrr";
     //removeAdjacentEqualLetters(a);
     //printf("%s", a);
 
 
-    char a[] = "hello123 123hello h1e2ll3o privet5";
+    char a[] = "hello123 123hello 1234hell privet5";
     WordDescriptor word;
     char *aa = a;
     while(strGetWord(aa, &word)){
         aa = word.end;
+        char *end = word.end - 1;
         for(char *i = word.begin; i < word.end; i++){
+            if(isdigit(*i) && i <= end){
+                char copy = *end;
+                *end = *i;
+                *i = copy;
+                end--;
+            }
             printf("%c", *i);
         }
         printf("\n");
     }
 
+    printf("%s", a);
 
 }

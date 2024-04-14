@@ -38,6 +38,30 @@ void removeAdjacentEqualLetters(char *s){
 }
 
 
+
+
+
+char zadanie4(char *s){
+/*
+Преобразовать строку, заменяя каждую цифру соответствующим ей числом
+пробелов.
+*/
+    unsigned int size = strLen(s);
+    char *i = s;
+    while(*i != '\0'){
+        if(isdigit(*i)){
+            int j = *i - '0';
+            while(j--)
+                string_buffer[buffer_size++] = ' ';
+        }else{
+            string_buffer[buffer_size++] = *i;
+        }
+        i++;
+    }
+    string_buffer[buffer_size++] = '\0';
+}
+
+
 int main(){
     //zadanie1();
 
@@ -49,6 +73,10 @@ int main(){
     //printf("%s", a);
 
 
+    /*  zadanie 3
+     * Преобразовать строку таким образом, чтобы цифры каждого слова были
+        перенесены в конец слова без изменения порядка следования их в слове, а
+        буквы – в начало.
     char a[] = "hello123 123hello 1234hell privet5";
     WordDescriptor word;
     char *aa = a;
@@ -68,5 +96,15 @@ int main(){
     }
 
     printf("%s", a);
+    */
+
+
+
+
+    //Zadanie 4
+    char a[] = "abc3sss2s1c";
+    zadanie4(a);
+    printf("%s", string_buffer);
+
 
 }

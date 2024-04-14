@@ -3,7 +3,15 @@
 
 #include <stdio.h>
 #include <ctype.h>
+#include <stdbool.h>
 
+#define MAX_STRING_SIZE 100
+#define MAX_N_WORDS_IN_STRING 100
+#define MAX_WORD_SIZE 20
+
+
+char string_buffer[MAX_STRING_SIZE + 1];
+int buffer_size = 0;
 
 
 //Возвращает длинну строки str.
@@ -71,11 +79,14 @@ typedef struct WordDescriptor {
 } WordDescriptor;
 
 
-
+//Записывает слово в word начиная с beginSearch
+//Возвращает 1 при успешном считывании
 int strGetWord(char *beginSearch, WordDescriptor *word);
 
 
-
+//Записывает слово в word с конца строки rbegin и до начала rend
+//Возвращает 1 при успешном считывании
+bool strGetWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 
 
 

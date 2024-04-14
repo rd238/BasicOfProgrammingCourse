@@ -108,7 +108,7 @@ void matrixSelectionSortColsByColCriteria(matrix m, int (*criteria)(int*, int)){
 
             if(criteria(a, m.nRows) > criteria(b, m.nRows)) {
                 jj = j;
-                for(int i = 0; i < m.nRows; i++)
+                for(int i = 0; i < m.nRows; i++) // лишнее
                     a[i] = b[i];
             }
         }

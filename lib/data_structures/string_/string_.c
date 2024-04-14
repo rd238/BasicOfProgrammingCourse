@@ -92,3 +92,12 @@ int strGetWord(char *beginSearch, WordDescriptor *word) {
     word->end = strFindSpace(word->begin);
     return 1;
 }
+
+
+bool strGetWordReverse(char *rbegin, char *rend, WordDescriptor *word){
+    word->begin = strFindSpaceReverse(rbegin, rend);
+    if (word->begin == rend)
+        return 0;
+    word->end = strFindNonSpaceReverse(rbegin, word->begin);
+    return 1;
+}

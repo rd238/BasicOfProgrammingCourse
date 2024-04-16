@@ -172,6 +172,53 @@ int zadanie8(char *sourse){
 
 
 
+
+void zadanie9(char *str1, char *str2){
+/*
+Даны две строки. Получить строку, в которой чередуются слова первой и второй
+строки. Если в одной из строк число слов больше, чем в другой, то оставшиеся
+слова этой строки должны быть дописаны в строку-результат. В качестве
+разделителя между словами используйте пробел.
+ */
+    WordDescriptor word1, word2;
+    int f_bool, s_bool;
+    int switcher = 1;
+    char *ptr1 = str1;
+    char *ptr2 = str2;
+    char *ptr_rec = string_buffer;
+    while(f_bool = strGetWord(ptr1, &word1),
+            s_bool = strGetWord(ptr2, &word2),
+            f_bool || s_bool){
+        if(f_bool && s_bool){
+            if(switcher){
+                for(char *i = word1.begin; i <= word1.end; i++, ptr_rec++)
+                    *ptr_rec = *i;
+                ptr1 = word1.end;
+                switcher = 0;
+            }else{
+                for(char *i = word2.begin; i <= word2.end; i++, ptr_rec++)
+                    *ptr_rec = *i;
+                ptr2 = word2.end;
+                switcher = 1;
+            }
+        }else{
+            if(f_bool){
+                for(char *i = word1.begin; i <= word1.end; i++, ptr_rec++)
+                    *ptr_rec = *i;
+                ptr1 = word1.end;
+            }
+            if(s_bool){
+                for(char *i = word2.begin; i <= word2.end; i++, ptr_rec++)
+                    *ptr_rec = *i;
+                ptr2 = word2.end;
+            }
+        }
+    }
+    *ptr_rec = '\0';
+    printf("%s", string_buffer);
+}
+
+
 int main(){
     //zadanie1();
 
@@ -246,8 +293,18 @@ int main(){
     */
 
 
+
+    /* Zadanie 8
     char a[] = "plalp,plaalp,plall,aaaa,abcba";
     printf("%d", zadanie8(a));
+    */
+
+
+
+    char a[] = "privet poka zdrawstvuite";
+    char b[] = "Oleg Denis Petr Petya";
+    zadanie9(a,b);
+
 
 
 }

@@ -219,6 +219,34 @@ void zadanie9(char *str1, char *str2){
 }
 
 
+
+
+
+void zadanie10(char *sourse){
+/*
+Преобразовать строку, изменив порядок следования слов в строке на обратный.
+*/
+    WordDescriptor array[20];
+    WordDescriptor word;
+    char *ptr = sourse;
+    char *ptr_buffer = string_buffer;
+    int index = 0;
+    while(strGetWord(ptr, &word)) {
+        array[index++] = word;
+        ptr = word.end;
+    }
+    while(index > 0){
+        for(char *i = array[index].begin; i < array[index].end; i++, ptr_buffer++)
+            *ptr_buffer = *i;
+        index--;
+        *ptr_buffer = ' ';
+        ptr_buffer++;
+    }
+    *ptr_buffer = '\0';
+    printf("%s", string_buffer);
+}
+
+
 int main(){
     //zadanie1();
 
@@ -301,9 +329,20 @@ int main(){
 
 
 
+    /* Zadanie 9
     char a[] = "privet poka zdrawstvuite";
     char b[] = "Oleg Denis Petr Petya";
     zadanie9(a,b);
+    */
+
+
+
+
+    char a[] = "poka goodbue git privet";
+    zadanie10(a);
+
+
+
 
 
 

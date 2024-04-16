@@ -105,6 +105,9 @@ void zadanie5(char *sourse, char *w1, char *w2){
 
 
 bool zadanie6(char *sourse){
+/*
+Определить, упорядочены ли лексикографически слова данного предложения.
+ */
     WordDescriptor word1, word2;
     strGetWord(sourse, &word1);
     while(strGetWord(word1.end, &word2)){
@@ -126,6 +129,9 @@ bool zadanie6(char *sourse){
 
 
 void zadanie7(char *sourse){
+/*
+Вывести слова данной строки в обратном порядке по одному в строке экрана.
+ */
     WordDescriptor word;
     if(!strGetWord(sourse, &word))
         return;
@@ -136,6 +142,35 @@ void zadanie7(char *sourse){
         printf("%c", *i);
     printf("\n");
 }
+
+
+
+int zadanie8(char *sourse){
+/*
+В данной строке соседние слова разделены запятыми. Определить количество слов-палиндромов.
+ */
+    char *ptr = sourse;
+    size_t amount = 0;
+    for(char *i = sourse; *i != '\0' && ptr != NULL; i++){
+        if(*i == ',' || *i == '\0'){
+            char *ptr_copy = ptr;
+            char *i_copy = i;
+            size_t is_palindrome = 1;
+            while(ptr_copy > i_copy)
+                if(*ptr_copy != *i_copy)
+                    is_palindrome = 0;
+            if(*i == '\0')
+                ptr = NULL;
+            else
+                ptr = i + 1;
+            amount += is_palindrome;
+        }
+    }
+
+    return amount;
+}
+
+
 
 int main(){
     //zadanie1();
@@ -203,8 +238,16 @@ int main(){
     */
 
 
+
+
+    /* Zadanie 7
     char a[] = "aaa bbb ccc dedd eee";
     zadanie7(a);
+    */
+
+
+    char a[] = "plalp,plaalp,plall,aaaa,abcba";
+    printf("%d", zadanie8(a));
 
 
 }

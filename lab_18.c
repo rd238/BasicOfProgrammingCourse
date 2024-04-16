@@ -102,6 +102,27 @@ void zadanie5(char *sourse, char *w1, char *w2){
 }
 
 
+
+
+bool zadanie6(char *sourse){
+    WordDescriptor word1, word2;
+    strGetWord(sourse, &word1);
+    while(strGetWord(word1.end, &word2)){
+        int difference = 0;
+        for(char *i = word1.begin; i < word1.end; i++)
+            difference += *i;
+        for(char *i = word2.begin; i < word2.end; i++)
+            difference -= *i;
+        if(difference <= 0) {
+            word1 = word2;
+        }else {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+
 int main(){
     //zadanie1();
 
@@ -152,11 +173,17 @@ int main(){
 
 
 
+    /* Zadanie 5
     char a[] = "slovo ne viletit vorobei";
     char b[] = "vorobei";
     char c[] = "vorobeiiiiiiii";
     zadanie5(a, b, c);
+    */
 
+
+
+    char a[] = "bbb aaa ccc ddd eee fff ggg";
+    printf("%d", zadanie6(a));
 
 
 }

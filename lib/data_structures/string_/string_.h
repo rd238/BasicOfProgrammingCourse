@@ -10,8 +10,7 @@
 #define MAX_WORD_SIZE 20
 
 
-char string_buffer[MAX_STRING_SIZE + 1];
-int buffer_size = 0;
+
 
 
 //Возвращает длинну строки str.

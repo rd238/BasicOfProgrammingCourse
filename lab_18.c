@@ -1,5 +1,8 @@
 #include "lib/data_structures/string_/string_.h"
 
+char string_buffer[MAX_STRING_SIZE + 1];
+int buffer_size = 0;
+
 
 
 int predicate1(int a){
@@ -62,6 +65,43 @@ char zadanie4(char *s){
 }
 
 
+
+void zadanie5(char *sourse, char *w1, char *w2){
+/*
+Заменить все вхождения слова w1 на слово w2.
+ */
+    size_t w1_len = strLen(w1);
+    size_t w2_len = strLen(w2);
+    WordDescriptor word_w1 = {w1, w1 + w1_len};
+    WordDescriptor word_w2 = {w2, w2 + w2_len};
+
+    char *read_ptr = sourse;
+    char *rec_ptr = string_buffer;
+    WordDescriptor word_read;
+
+    while(strGetWord(read_ptr, &word_read)){
+        size_t is_equal = 1;
+        char *j = word_w1.begin;
+        for(char *i = word_read.begin; i < word_read.end; i++, j++){
+            if(*i != *j || j > word_w1.end) {
+                is_equal = 0;
+                break;
+            }
+        }
+        if(is_equal){
+            for(char *i = word_w2.begin; i <= word_w2.end; i++, rec_ptr++)
+                *rec_ptr = *i;
+            read_ptr += word_w1.end - word_w1.begin;
+        }else{
+            for(char *i = word_read.begin; i <= word_read.end; i++, rec_ptr++, read_ptr++)
+                *rec_ptr = *i;
+        }
+    }
+    *rec_ptr = '\0';
+    printf("%s", string_buffer);
+}
+
+
 int main(){
     //zadanie1();
 
@@ -71,6 +111,9 @@ int main(){
     //char a[] = "aaadddssswwwrrrrrrr";
     //removeAdjacentEqualLetters(a);
     //printf("%s", a);
+
+
+
 
 
     /*  zadanie 3
@@ -101,10 +144,19 @@ int main(){
 
 
 
-    //Zadanie 4
+    /*Zadanie 4
     char a[] = "abc3sss2s1c";
     zadanie4(a);
     printf("%s", string_buffer);
+    */
+
+
+
+    char a[] = "slovo ne viletit vorobei";
+    char b[] = "vorobei";
+    char c[] = "vorobeiiiiiiii";
+    zadanie5(a, b, c);
+
 
 
 }

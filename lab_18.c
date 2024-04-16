@@ -123,6 +123,20 @@ bool zadanie6(char *sourse){
 }
 
 
+
+
+void zadanie7(char *sourse){
+    WordDescriptor word;
+    if(!strGetWord(sourse, &word))
+        return;
+
+    zadanie7(word.end);
+
+    for(char *i = word.begin; i < word.end; i++)
+        printf("%c", *i);
+    printf("\n");
+}
+
 int main(){
     //zadanie1();
 
@@ -182,8 +196,15 @@ int main(){
 
 
 
+
+    /* Zadanie 6
     char a[] = "bbb aaa ccc ddd eee fff ggg";
     printf("%d", zadanie6(a));
+    */
+
+
+    char a[] = "aaa bbb ccc dedd eee";
+    zadanie7(a);
 
 
 }

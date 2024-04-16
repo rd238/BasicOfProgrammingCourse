@@ -247,6 +247,34 @@ void zadanie10(char *sourse){
 }
 
 
+
+void zadanie11(char *sourse){
+/*
+Вывести слово данной строки, предшествующее первому из слов, содержащих
+букву "а". Регистр значения не имеет.
+*/
+    WordDescriptor word1, word2;
+    char *prt1 = sourse;
+    int a = 1;
+    strGetWord(sourse, &word1);
+    while(strGetWord(prt1, &word2) && a){
+        for(char *i = word2.begin; i < word2.end; i++){
+            if(*i == 'a') {
+                a = 0;
+                break;
+            }
+        }
+        if(!a) {
+            break;
+        }else{
+            prt1 = word2.end;
+            word1 = word2;
+        }
+    }
+    for(char *i = word1.begin; i < word1.end; i++)
+        printf("%c", *i);
+}
+
 int main(){
     //zadanie1();
 
@@ -337,12 +365,14 @@ int main(){
 
 
 
-
+    /* Zadanie 10
     char a[] = "poka goodbue git privet";
     zadanie10(a);
+     */
 
 
-
+    char a[] = "odin fave tri chetire pat";
+    zadanie11(a);
 
 
 

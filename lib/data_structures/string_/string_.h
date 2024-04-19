@@ -92,6 +92,10 @@ bool strGetWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 void wordDescriptionToString(WordDescriptor word, char *string);
 
 
+//Сравнивает word1 и word2.
+bool wordIsEqual(WordDescriptor word1, WordDescriptor word2);
+
+
 
 
 

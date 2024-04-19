@@ -108,3 +108,12 @@ void wordDescriptionToString(WordDescriptor word, char *string){
         *string = *i;
     *string = '\0';
 }
+
+
+bool wordIsEqual(WordDescriptor word1, WordDescriptor word2){
+    for(char *i = word1.begin, *j = word2.begin; i < word1.end && j < word2.end; i++, j++)
+        if (*i != *j)
+            return 0;
+
+    return 1;
+}

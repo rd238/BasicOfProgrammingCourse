@@ -398,6 +398,36 @@ void zadanie15(char *str){
     printf("%s", string_buffer);
 }
 
+
+
+void zadanie16(char *str1, char *str2){
+/*
+Даны две строки s1 и s2. Пусть w – первое из слов строки s1, которое есть и в
+строке s2. Найти слово, предшествующее первому вхождению w в s1.
+*/
+    WordDescriptor w;
+    char *str1_copy = str1;
+    strGetWord(str1_copy, &w);
+    str1_copy = w.end;
+    for(WordDescriptor i; strGetWord(str1_copy, &i);){
+        char *str22 = str2;
+        int is_orig = 0;
+        for(WordDescriptor j; strGetWord(str22, &j);){
+            if(wordIsEqual(i,j)){
+                is_orig = 1;
+                break;
+            }
+            str22 = j.end;
+        }
+        if(is_orig)
+            break;
+        str1_copy = i.end;
+        w = i;
+    }
+    *w.end = '\0';
+    printf("%s", w.begin);
+}
+
 int main(){
     //zadanie1();
 
@@ -527,9 +557,15 @@ int main(){
 
 
 
-
+    /* Zadanie 15
     char a[] = "rbegin word rend end word";
     zadanie15(a);
+    */
 
+
+
+    char a[] = "pyat capital right rbegin pyat";
+    char b[] = "odin dva tri chetire right tri";
+    zadanie16(a,b);
 
 }

@@ -457,6 +457,44 @@ void zadanie17(char *str){
     printf("%s", string_buffer);
 }
 
+
+
+void zadanie18(char *str1, int n1, char *str2, int n2){
+/*
+Даны две строки. Пусть n1 – число слов в первой строке, а n2 – во второй.
+Требуется дополнить строку, содержащую меньшее количество слов, последними
+словами строки, в которой содержится большее количество слов.
+ */
+    char *min, *max;
+    if(n1 > n2){
+        min = str2;
+        max = str1;
+        n1 = n2;
+    }else{
+        min = str1;
+        max = str2;
+    }
+    char *buffer = string_buffer;
+    for(WordDescriptor i; strGetWord(min, &i);){
+        *i.end = ' ';
+        for(char *j = i.begin; j <= i.end; j++, buffer++) {
+            *buffer = *j;
+        }
+        min = i.end;
+    }
+
+    for(WordDescriptor i; strGetWord(max, &i); n1--){
+        if(n1 <= 0){
+            for(char *j = i.begin; j <= i.end; j++, buffer++)
+                *buffer = *j;
+        }
+        max = i.end;
+    }
+    *buffer = '\0';
+    printf("%s", string_buffer);
+}
+
+
 int main(){
     //zadanie1();
 
@@ -600,9 +638,19 @@ int main(){
 
 
 
-
+    /* Zadanie 17
     char a[] = "abccba hello worow world";
     zadanie17(a);
+    */
+
+
+
+
+    char a[] = "odin dwa tri chetire pyat shest";
+    int n1 = 6;
+    char b[] = "open open open open open open open open sem vosem";
+    int n2 = 10;
+    zadanie18(a, n1, b, n2);
 
 
 

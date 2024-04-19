@@ -278,6 +278,10 @@ void zadanie11(char *sourse){
 
 
 void zadanie12(char *str1, char *str2){
+/*
+Даны две строки. Определить последнее из слов первой строки, которое есть
+во второй строке.
+*/
     char string[MAX_WORD_SIZE];
     WordDescriptor word1, word2;
     while(strGetWord(str1, &word1) &&
@@ -303,6 +307,9 @@ void zadanie12(char *str1, char *str2){
 
 
 bool zadanie13(char *str){
+/*
+Определить, есть ли в данной строке одинаковые слова.
+*/
     WordDescriptor word1, word2;
     while(strGetWord(str, &word1)){
         char *str_copy = word1.end;
@@ -323,6 +330,39 @@ bool zadanie13(char *str){
     }
 
     return 0;
+}
+
+
+
+
+bool zadanie14(char *str){
+/*
+Определить, есть ли в данной строке пара слов, составленных из одинакового
+набора букв.
+*/
+    char *buffer = string_buffer;
+    for(char *i = str; *i != '\0'; i++, buffer++)
+        *buffer = *i;
+    *buffer = '\0';
+    buffer = string_buffer;
+    WordDescriptor word;
+    while(strGetWord(buffer, &word)) {
+        for (char *i = word.begin; i < word.end; i++) {
+            char *min = i;
+            for (char *j = i + 1; j < word.end; j++) {
+                if (*j < *i)
+                    min = j;
+            }
+            if (min != i) {
+                char temp = *min;
+                *min = *i;
+                *i = temp;
+            }
+        }
+        buffer = word.end;
+    }
+    return zadanie13(string_buffer);
+
 }
 
 int main(){
@@ -438,12 +478,16 @@ int main(){
 
 
 
-
+    /* Zadanie 13
     char str1[] = "word is a capital of great Britain word";
     printf("%d", zadanie13(str1));
+    */
 
 
 
+
+    char a[] = "word capital rowd";
+    printf("%d",zadanie14(a));
 
 
 }

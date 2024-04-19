@@ -365,6 +365,39 @@ bool zadanie14(char *str){
 
 }
 
+
+
+
+void zadanie15(char *str){
+/*
+Получить строку из слов данной строки, которые отличны от последнего слова.
+*/
+    WordDescriptor end_word;
+    char *str_copy = str;
+    strGetWord(str_copy, &end_word);
+    while(*end_word.end != '\0'){
+        str_copy = end_word.end;
+        strGetWord(str_copy, &end_word);
+    }
+    WordDescriptor word;
+    char *buff = string_buffer;
+    while(strGetWord(str, &word)){
+        int is_word = 1;
+        for(char *i = word.begin, *j = end_word.begin; i < word.end; i++, j++){
+            if(*i != *j || j > end_word.end){
+                is_word = 0;
+                break;
+            }
+        }
+        if(!is_word)
+            for(char *i = word.begin; i <= word.end; i++, buff++)
+                *buff = *i;
+        str = word.end;
+    }
+
+    printf("%s", string_buffer);
+}
+
 int main(){
     //zadanie1();
 
@@ -486,8 +519,17 @@ int main(){
 
 
 
+    /* Zadanie 14
     char a[] = "word capital rowd";
     printf("%d",zadanie14(a));
+    */
+
+
+
+
+
+    char a[] = "rbegin word rend end word";
+    zadanie15(a);
 
 
 }

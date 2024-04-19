@@ -428,6 +428,35 @@ void zadanie16(char *str1, char *str2){
     printf("%s", w.begin);
 }
 
+
+
+
+void zadanie17(char *str){
+/*
+Задача на удаление слов из строки (любую одну на выбор):
+ Удалить из данной строки слова-палиндромы.
+*/
+    WordDescriptor word;
+    char *buffer = string_buffer;
+    while(strGetWord(str, &word)){
+        int is_palindrome = 1;
+        for(char *i = word.begin, *j = word.end - 1; i < j; i++, j--){
+            if(*i != *j){
+                is_palindrome = 0;
+                break;
+            }
+        }
+        if(!is_palindrome){
+            for(char *i = word.begin; i <= word.end; i++, buffer++){
+                *buffer = *i;
+            }
+        }
+        str = word.end;
+    }
+
+    printf("%s", string_buffer);
+}
+
 int main(){
     //zadanie1();
 
@@ -563,9 +592,19 @@ int main(){
     */
 
 
-
+    /* Zadanie 16
     char a[] = "pyat capital right rbegin pyat";
     char b[] = "odin dva tri chetire right tri";
     zadanie16(a,b);
+    */
+
+
+
+
+    char a[] = "abccba hello worow world";
+    zadanie17(a);
+
+
+
 
 }

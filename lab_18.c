@@ -8,11 +8,10 @@ int buffer_size = 0;
 int predicate1(int a){
     return !isspace(a);
 }
-void zadanie1(){
+void zadanie1(char *a){
 /*
 удалить из строки все пробельные символы.
 */
-    char a[] = "H  e  ll o wo rl d  ";
     char *end = a + strLen(a);
     char *dest = strCopyIf(a, end, a, predicate1);
     *dest = '\0';
@@ -41,6 +40,34 @@ void removeAdjacentEqualLetters(char *s){
 }
 
 
+
+
+void zadanie3(char *a){
+/*
+Преобразовать строку таким образом, чтобы цифры каждого слова были
+перенесены в конец слова без изменения порядка следования их в слове, а
+буквы – в начало.
+*/
+    WordDescriptor word;
+    char *aa = a;
+    while(strGetWord(aa, &word)){
+        aa = word.end;
+        char *end = word.end - 1;
+        for(char *i = word.begin; i < word.end; i++){
+            if(isdigit(*i) && i <= end){
+                char copy = *end;
+                *end = *i;
+                *i = copy;
+                end--;
+            }
+            printf("%c", *i);
+        }
+        printf("\n");
+    }
+
+    printf("%s", a);
+
+}
 
 
 
@@ -514,7 +541,257 @@ bool zadanie19(char *str, char *word){
     return 1;
 }
 
+
+
+
+
+
+void test1(){
+    printf("exercise 1 \n");
+    char a[] = "H  e  ll o wo rl d  ";
+    zadanie1(a);
+    printf("\n");
+    char b[] = "o    d    i     n";
+    zadanie1(b);
+    printf("\n");
+    printf("=====================\n");
+}
+void test2(){
+    printf("exercise 2 \n");
+    char a[] = "aaadddssswwwrrrrrrr";
+    removeAdjacentEqualLetters(a);
+    printf("%s", a);
+    printf("\n");
+    char b[] = "oooooodddddddiiiiiinnnnnn";
+    removeAdjacentEqualLetters(b);
+    printf("%s", b);
+    printf("\n");
+    printf("=====================\n");
+}
+void test3(){
+    printf("exercise 3 \n");
+    char a[] = "hello123 123hello 1234hell privet5";
+    zadanie3(a);
+    printf("\n");
+    char b[] = "hell111 1444lo 1254ll pri335";
+    zadanie3(b);
+    printf("\n");
+    printf("=====================\n");
+}
+void test4(){
+    printf("exercise 4 \n");
+    char a[] = "abc3sss2s1c";
+    zadanie4(a);
+    printf("%s", string_buffer);
+    printf("\n");
+    char b[] = "o5d5i5n";
+    zadanie4(b);
+    printf("%s", string_buffer);
+    printf("\n");
+    printf("=====================\n");
+}
+void test5(){
+    printf("exercise 5 \n");
+    char a[] = "slovo ne viletit vorobei";
+    char b[] = "vorobei";
+    char c[] = "vorobeiiiiiiii";
+    zadanie5(a, b, c);
+    printf("\n");
+    char q[] = "slovo ne vorobei";
+    char w[] = "vorobei";
+    char e[] = "vor";
+    zadanie5(q, w, e);
+    printf("\n");
+    printf("=====================\n");
+}
+void test6(){
+    printf("exercise 6 \n");
+    char a[] = "bbb aaa ccc ddd eee fff ggg";
+    printf("%d", zadanie6(a));
+    printf("\n");
+    char b[] = "hello world hello!";
+    printf("%d", zadanie6(b));
+    printf("\n");
+    printf("=====================\n");
+}
+void test7(){
+    printf("exercise 7 \n");
+    char a[] = "aaa bbb ccc dedd eee";
+    zadanie7(a);
+    printf("\n");
+    char b[] = "Gioanni is name my world hello";
+    zadanie7(b);
+    printf("\n");
+    printf("=====================\n");
+}
+void test8(){
+    printf("exercise 8 \n");
+    char a[] = "plalp,plaalp,plall,aaaa,abcba";
+    printf("%d", zadanie8(a));
+    printf("\n");
+    char b[] = "plalp,plaalp,pltttl,aabaa,abcba,heleh";
+    printf("%d", zadanie8(b));
+    printf("\n");
+    printf("=====================\n");
+}
+void test9(){
+    printf("exercise 9 \n");
+    char a[] = "hello my is";
+    char b[] = "world name Gioanni Petya";
+    zadanie9(a,b);
+    printf("\n");
+    char c[] = "privet poka zdrawstvuite";
+    char d[] = "Oleg Denis Petr Petya";
+    zadanie9(c,d);
+    printf("\n");
+    printf("=====================\n");
+}
+void test10(){
+    printf("exercise 10 \n");
+    char a[] = "poka goodbue git privet";
+    zadanie10(a);
+    printf("\n");
+    char b[] = "word hello world wolder";
+    zadanie10(b);
+    printf("\n");
+    printf("=====================\n");
+}
+void test11(){
+    printf("exercise 11 \n");
+    char a[] = "odin fave tri chetire pat";
+    zadanie11(a);
+    printf("\n");
+    char b[] = "hello word name is";
+    zadanie11(b);
+    printf("\n");
+    printf("=====================\n");
+}
+void test12(){
+    printf("exercise 12 \n");
+    char str1[] = "word end start";
+    char str2[] = "start end word";
+    zadanie12(str1, str2);
+    printf("\n");
+    char str3[] = "world hello word zadanie exercive";
+    char str4[] = "start end word";
+    zadanie12(str3, str4);
+    printf("\n");
+    printf("=====================\n");
+}
+void test13(){
+    printf("exercise 13 \n");
+    char str1[] = "word is a capital of great Britain word";
+    printf("%d", zadanie13(str1));
+    printf("\n");
+    char str2[] = "word is a capital of great Britain";
+    printf("%d", zadanie13(str2));
+    printf("\n");
+    printf("=====================\n");
+}
+void test14(){
+    printf("exercise 14 \n");
+    char a[] = "word capital rowd";
+    printf("%d",zadanie14(a));
+    printf("\n");
+    char b[] = "hello world oleg word";
+    printf("%d",zadanie14(b));
+    printf("\n");
+    printf("=====================\n");
+}
+void test15(){
+    printf("exercise 15 \n");
+    char a[] = "rbegin word rend end word";
+    zadanie15(a);
+    printf("\n");
+    char b[] = "hello world oleg guru hello";
+    zadanie15(b);
+    printf("\n");
+    printf("=====================\n");
+}
+void test16(){
+    printf("exercise 16 \n");
+    char a[] = "pyat capital right rbegin pyat";
+    char b[] = "odin dva tri chetire right tri";
+    zadanie16(a,b);
+    printf("\n");
+    char c[] = "oleg hello word world britain";
+    char d[] = "dirol hell word would";
+    zadanie16(c,d);
+    printf("\n");
+    printf("=====================\n");
+}
+void test17(){
+    printf("exercise 17 \n");
+    char a[] = "abccba hello worow world";
+    zadanie17(a);
+    printf("\n");
+    char b[] = "palidrome hello worow woronorow world";
+    zadanie17(b);
+    printf("\n");
+    printf("=====================\n");
+}
+void test18(){
+    printf("exercise 18 \n");
+    char a[] = "odin dwa tri chetire pyat shest";
+    int n1 = 6;
+    char b[] = "open open open open open open open open sem vosem";
+    int n2 = 10;
+    zadanie18(a, n1, b, n2);
+    printf("\n");
+    char c[] = "hello world book";
+    int c1 = 3;
+    char d[] = "odin odin odin odin odin";
+    int d2 = 5;
+    zadanie18(c, c1, d, d2);
+    printf("\n");
+    printf("=====================\n");
+}
+void test19(){
+    printf("exercise 19 \n");
+    char a[] = "london is a capital of great britain";
+    char b[] = "lord";
+    printf("%d",zadanie19(a,b));
+    printf("\n");
+    char c[] = "london is a capital of great britain";
+    char d[] = "word";
+    printf("%d",zadanie19(c,d));
+    printf("\n");
+    printf("=====================\n");
+}
+void test(){
+    test1();
+    test2();
+    test3();
+    test4();
+    test5();
+    test6();
+    test7();
+    test8();
+    test9();
+    test10();
+    test11();
+    test12();
+    test13();
+    test14();
+    test15();
+    test16();
+    test17();
+    test18();
+    test19();
+}
+
+
 int main(){
+    test();
+
+
+
+
+
+
+
+
+
     //zadanie1();
 
 
@@ -674,9 +951,10 @@ int main(){
 
 
 
+    /* Zadanie 19
     char a[] = "london is a capital of great britain";
     char b[] = "lord";
     printf("%d",zadanie19(a,b));
-
+    */
 
 }

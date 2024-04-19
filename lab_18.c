@@ -275,6 +275,30 @@ void zadanie11(char *sourse){
         printf("%c", *i);
 }
 
+
+
+void zadanie12(char *str1, char *str2){
+    char string[MAX_WORD_SIZE];
+    WordDescriptor word1, word2;
+    while(strGetWord(str1, &word1) &&
+            strGetWord(str2, &word2)){
+        int is_equal = 1;
+        char *j = word2.begin;
+        for(char *i = word1.begin; i < word1.end; i++, j++){
+            if(*i != *j){
+                is_equal = 0;
+                break;
+            }
+        }
+        if(is_equal)
+            wordDescriptionToString(word1, string);
+        str1 = word1.end;
+        str2 = word2.end;
+    }
+    printf("%s", string);
+}
+
+
 int main(){
     //zadanie1();
 
@@ -371,8 +395,19 @@ int main(){
      */
 
 
+
+
+    /* Zadanie 11
     char a[] = "odin fave tri chetire pat";
     zadanie11(a);
+    */
+
+
+
+
+    char str1[] = "word end start";
+    char str2[] = "start end word";
+    zadanie12(str1, str2);
 
 
 

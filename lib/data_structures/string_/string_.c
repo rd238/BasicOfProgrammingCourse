@@ -101,3 +101,10 @@ bool strGetWordReverse(char *rbegin, char *rend, WordDescriptor *word){
     word->end = strFindNonSpaceReverse(rbegin, word->begin);
     return 1;
 }
+
+
+void wordDescriptionToString(WordDescriptor word, char *string){
+    for(char *i = word.begin; i <= word.end; i++, string++)
+        *string = *i;
+    *string = '\0';
+}

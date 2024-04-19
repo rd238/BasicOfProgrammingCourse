@@ -88,6 +88,10 @@ int strGetWord(char *beginSearch, WordDescriptor *word);
 bool strGetWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 
 
+//Преобразует слово word в строку string
+void wordDescriptionToString(WordDescriptor word, char *string);
+
+
 
 
 

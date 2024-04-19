@@ -272,17 +272,74 @@ size_t bitSymmetricDifference(int *a, int *b, int *c, size_t an, size_t bn){
     return cn;
 }
 
+int orderIntersection1(int *a, int *b, int *c, size_t an, size_t bn){
+    int size_c = 0;
+    for(int i = 0; i < an; i++){
+        for(int j = 0; j < bn; j++){
+            if(a[i] == b[j]){
+                c[size_c++] = a[i];
+                break;
+            }
+        }
+    }
+
+    return size_c;
+}
+
+
+
+
+
+
+
+// (A− X)  B  X
+void v1(int *A, size_t an, int *B, size_t bn,
+        int *C, size_t cn, int *X, size_t xn, int *neX, size_t nexn){
+    int step1[10];
+    int step1n = orderIntersection(A, neX, step1, an, nexn);
+    int step2[10];
+    int step2n = orderIntersection(B, X, step2, bn, xn);
+    int step3[10];
+    int step3n = orderSymmetricDifference(step1, step2, step3, step1n, step2n);
+    printf("{ ");
+    for(int i = 0; i < step3n; i++){
+        printf("%d ", step3[i]);
+    }
+    printf("} ");
+}
+
+
+
+
+// ¯(A - ¯X  )   (C − X)
+void v2(int *neA, size_t an,
+        int *C, size_t cn,
+        int *neX, size_t nexn){
+    int step1[10];
+    int step1n = orderIntersection1(C, neX, step1, cn, nexn);
+    int step2[10];
+    int step2n = orderUnion(neA, neX, step2, an, nexn);
+    int step3[10];
+    int step3n = orderSymmetricDifference(step1, step2, step3, step1n, step2n);
+    printf("{ ");
+    for(int i = 0; i < step3n; i++){
+        printf("%d ", step3[i]);
+    }
+    printf("} ");
+}
+
 
 int main() {
-    int A[3] = {1,2,8};
-    int B[2] = {6,7};
-    int C[5] = {2,3,4,5,7};
+    int U[10] = {1,2,3,4,5,6,7,8,9,10};
+    int A[4] = {3, 7, 9, 10};
+    int neA[6] = {1,2,4,5,6,8};
+    int B[5] = {1, 3, 8, 9, 10};
+    int C[5] = {2, 4, 5, 6, 7};
+    int X[3] = {1, 7, 8};
+    int neX[7] = {2,3,4,5,6,9,10};
 
-    int res1[10], res2[10], res3[10], res4[10], res5[10], res6[10];
+    v1(A, 4, B, 5, C, 5, X, 3, neX, 7);
+    printf(" = ");
+    v2(neA, 6, C, 5, neX, 7);
 
-    int r1n = unorderIntersection(A, C, res1, 3, 5);
-    int r2n = orderDifference(C, res1, res2, 5, r1n);
-    for(int i = 0; i < r1n; i++){
-        printf("%d ",res1[i]);
-    }
 }

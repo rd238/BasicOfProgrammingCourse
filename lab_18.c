@@ -299,6 +299,32 @@ void zadanie12(char *str1, char *str2){
 }
 
 
+
+
+
+bool zadanie13(char *str){
+    WordDescriptor word1, word2;
+    while(strGetWord(str, &word1)){
+        char *str_copy = word1.end;
+        while(strGetWord(str_copy, &word2)){
+            char *j = word2.begin;
+            int is_equal = 1;
+            for(char *i = word1.begin; i < word1.end && j < word2.end; i++, j++){
+                if(*i != *j){
+                    is_equal = 0;
+                    break;
+                }
+            }
+            if(is_equal)
+                return 1;
+            str_copy = word2.end;
+        }
+        str = word1.end;
+    }
+
+    return 0;
+}
+
 int main(){
     //zadanie1();
 
@@ -404,10 +430,19 @@ int main(){
 
 
 
-
+    /* Zadanie 12
     char str1[] = "word end start";
     char str2[] = "start end word";
     zadanie12(str1, str2);
+    */
+
+
+
+
+    char str1[] = "word is a capital of great Britain word";
+    printf("%d", zadanie13(str1));
+
+
 
 
 

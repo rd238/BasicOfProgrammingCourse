@@ -495,6 +495,25 @@ void zadanie18(char *str1, int n1, char *str2, int n2){
 }
 
 
+
+
+bool zadanie19(char *str, char *word){
+/*
+Определить, входит ли в данную строку каждая буква данного слова.
+*/
+    for(char *i = str, *j = word; *j != '\0';){
+        if(*i == *j){
+            j++;
+            i = str;
+        }else if(*i != *j){
+            i++;
+        }
+        if( *i == '\0')
+            return 0;
+    }
+    return 1;
+}
+
 int main(){
     //zadanie1();
 
@@ -645,14 +664,19 @@ int main(){
 
 
 
-
+    /* Zadanie 18
     char a[] = "odin dwa tri chetire pyat shest";
     int n1 = 6;
     char b[] = "open open open open open open open open sem vosem";
     int n2 = 10;
     zadanie18(a, n1, b, n2);
+    */
 
 
+
+    char a[] = "london is a capital of great britain";
+    char b[] = "lord";
+    printf("%d",zadanie19(a,b));
 
 
 }

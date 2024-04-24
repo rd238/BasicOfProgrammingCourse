@@ -20,6 +20,7 @@ CMakeFiles/EducationProject.dir/lab_19.c.obj: D:/CLion\ 2023.3.4/Projects/lab_19
   D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
   D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
   D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
   D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/limits.h \
   D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
@@ -33,7 +34,8 @@ CMakeFiles/EducationProject.dir/lab_19.c.obj: D:/CLion\ 2023.3.4/Projects/lab_19
   D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
   D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
   D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
-  D:/CLion\ 2023.3.4/Projects/lib/data_structures/matrix/matrix.h
+  D:/CLion\ 2023.3.4/Projects/lib/data_structures/matrix/matrix.h \
+  D:/CLion\ 2023.3.4/Projects/lib/data_structures/string_/string_.h
 
 CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.obj: D:/CLion\ 2023.3.4/Projects/lib/algorithms/algorithm.c
 
@@ -127,6 +129,8 @@ D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
 
 D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h:
 
+D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/ctype.h:
+
 D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/errno.h:
 
 D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/malloc.h:
@@ -134,6 +138,8 @@ D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/malloc.h:
 D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/memory.h:
 
 D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
+
+D:/CLion\ 2023.3.4/Projects/lib/data_structures/string_/string_.h:
 
 D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
 

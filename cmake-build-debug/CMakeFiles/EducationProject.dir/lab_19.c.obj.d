@@ -29,4 +29,6 @@ CMakeFiles/EducationProject.dir/lab_19.c.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/assert.h \
  D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/memory.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h \
- D:/CLion\ 2023.3.4/Projects/lib/algorithms/array/array.h
+ D:/CLion\ 2023.3.4/Projects/lib/algorithms/array/array.h \
+ D:\CLion\ 2023.3.4\Projects\lib/data_structures/string_/string_.h \
+ D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/ctype.h

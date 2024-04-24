@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lib/data_structures/matrix/matrix.h"
+#include "lib/data_structures/string_/string_.h"
 
 
 void zadanie1(){
@@ -61,6 +62,68 @@ void zadanie2(){
 
 
 
+
+
+
+int operation(int a, int b, char op){
+    if(op == '+')
+        return a + b;
+    else if(op == '-')
+        return a - b;
+    else if(op == '*')
+        return a * b;
+    else if(op == '/')
+        return a / b;
+}
+void zadanie3(){
+/*
+Дан текстовый файл, представляющий собой запись
+арифметического выражения, операндами которого являются
+однозначные числа. Число операций в выражении не больше двух.
+Вычислить значение этого выражения и дописать его в конец этого
+файла.
+*/
+    FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie3.txt", "r");
+    int buf[5];
+    int size_buf = 0;
+    char buf_[2];
+    int size_buf_ = 0;
+    int a = 0;
+    while(!feof(file)){
+        if(a % 2 == 0)
+            fscanf(file, "%d ", &buf[size_buf++]);
+        else
+            fscanf(file, "%c ", &buf_[size_buf_++]);
+        a++;
+    }
+    fclose(file);
+    file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie3.txt", "a");
+    for(int i = 0; i < size_buf; i++)
+        printf("%d ", buf[i]);
+    if(size_buf_ > 1){
+        int result = 0;
+        if((buf_[1] == '*' || buf_[1] == '/') &&
+            buf_[0] != '*' && buf_[0] != '/'){
+            result = operation(buf[1], buf[2], buf_[1]);
+            result = operation(buf[0], result, buf_[0]);
+        }else{
+            result += operation(buf[0], buf[1], buf_[0]);
+            result = operation(result, buf[2], buf_[1]);
+        }
+        fprintf(file, " = %d", result);
+    }else{
+        fprintf(file, " = %d", operation(buf[0], buf[1], buf_[0]));
+    }
+
+
+    fclose(file);
+}
+
+
+
+
+
+
 int main(){
-    zadanie2();
+    zadanie3();
 }

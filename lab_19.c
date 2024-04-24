@@ -31,6 +31,7 @@ void zadanie1(){
                     fprintf(file_write, "%d\n", m.values[i][j]);
             }
         }
+        matrixFreeMem(&m);
     }
     fclose(file_read);
     fclose(file_write);
@@ -39,6 +40,27 @@ void zadanie1(){
 
 
 
+void zadanie2(){
+/*
+В текстовом файле записаны вещественные числа в форме с
+фиксированной точкой. Преобразовать файл, представив каждое
+число в форме с плавающей точкой, сохранив две цифры после точки
+в мантиссе.
+*/
+    FILE *file_read = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie2.txt", "r");
+    FILE *file_write = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie2_result.txt",
+                             "w");
+    while(!feof(file_read)){
+        float digit;
+        fscanf(file_read, "%f ", &digit);
+        fprintf(file_write, "%.2f ", digit);
+    }
+    fclose(file_read);
+    fclose(file_write);
+}
+
+
+
 int main(){
-    zadanie1();
+    zadanie2();
 }

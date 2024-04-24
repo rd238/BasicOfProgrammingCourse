@@ -178,6 +178,30 @@ lab_18.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EducationProject.dir\build.make CMakeFiles/EducationProject.dir/lab_18.c.s
 .PHONY : lab_18.c.s
 
+lab_19.obj: lab_19.c.obj
+.PHONY : lab_19.obj
+
+# target to build an object file
+lab_19.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EducationProject.dir\build.make CMakeFiles/EducationProject.dir/lab_19.c.obj
+.PHONY : lab_19.c.obj
+
+lab_19.i: lab_19.c.i
+.PHONY : lab_19.i
+
+# target to preprocess a source file
+lab_19.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EducationProject.dir\build.make CMakeFiles/EducationProject.dir/lab_19.c.i
+.PHONY : lab_19.c.i
+
+lab_19.s: lab_19.c.s
+.PHONY : lab_19.s
+
+# target to generate assembly for a file
+lab_19.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EducationProject.dir\build.make CMakeFiles/EducationProject.dir/lab_19.c.s
+.PHONY : lab_19.c.s
+
 lib/algorithms/algorithm.obj: lib/algorithms/algorithm.c.obj
 .PHONY : lib/algorithms/algorithm.obj
 
@@ -288,6 +312,9 @@ help:
 	@echo ... lab_18.obj
 	@echo ... lab_18.i
 	@echo ... lab_18.s
+	@echo ... lab_19.obj
+	@echo ... lab_19.i
+	@echo ... lab_19.s
 	@echo ... lib/algorithms/algorithm.obj
 	@echo ... lib/algorithms/algorithm.i
 	@echo ... lib/algorithms/algorithm.s

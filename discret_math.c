@@ -292,15 +292,65 @@ int orderIntersection1(int *a, int *b, int *c, size_t an, size_t bn){
 
 
 
-// (A− X)  B  X
+// (A − X) sym B ^ X
 void v1(int *A, size_t an, int *B, size_t bn,
-        int *C, size_t cn, int *X, size_t xn, int *neX, size_t nexn){
+        int *X, size_t xn){
+
     int step1[10];
-    int step1n = orderIntersection(A, neX, step1, an, nexn);
+    int step1n = 0;
+    for(int i = 0; i < an; i++){
+        int is_original = 1;
+        for(int j = 0; j < xn; j++){
+            if(A[i] == X[j]){
+                is_original = 0;
+                break;
+            }
+        }
+        if(is_original)
+            step1[step1n++] = A[i];
+    }
+
     int step2[10];
-    int step2n = orderIntersection(B, X, step2, bn, xn);
+    int step2n = 0;
+    for(int i = 0; i < bn; i++){
+        int is_original = 0;
+        for(int j = 0; j < xn; j++){
+            if(B[i] == X[j]){
+                is_original = 1;
+                break;
+            }
+        }
+        if(is_original)
+            step2[step2n++] = B[i];
+    }
+
     int step3[10];
-    int step3n = orderSymmetricDifference(step1, step2, step3, step1n, step2n);
+    int step3n = 0;
+    for(int i = 0; i < step1n; i++){
+        int is_original = 1;
+        for(int j = 0; j < step2n; j++){
+            if(step1[i] == step2[j]){
+                is_original = 0;
+                break;
+            }
+        }
+        if(is_original)
+            step3[step3n++] = step1[i];
+    }
+    for(int i = 0; i < step2n; i++){
+        int is_original = 1;
+        for(int j = 0; j < step1n; j++){
+            if(step2[i] == step1[j]){
+                is_original = 0;
+                break;
+            }
+        }
+        if(is_original)
+            step3[step3n++] = step2[i];
+    }
+
+
+
     printf("{ ");
     for(int i = 0; i < step3n; i++){
         printf("%d ", step3[i]);
@@ -311,19 +361,80 @@ void v1(int *A, size_t an, int *B, size_t bn,
 
 
 
-// ¯(A - ¯X  )   (C − X)
-void v2(int *neA, size_t an,
-        int *C, size_t cn,
-        int *neX, size_t nexn){
+// ¯(A - ¯X  )  sym (C − X)
+void v2(int *A, size_t an, int *C, size_t cn, int *X,
+        size_t xn, int *neX, size_t nexn, int *U, size_t un){
+
     int step1[10];
-    int step1n = orderIntersection1(C, neX, step1, cn, nexn);
+    int step1n = 0;
+    for(int i = 0; i < cn; i++){
+        int is_original = 1;
+        for(int j = 0; j < xn; j++){
+            if(C[i] == X[j]){
+                is_original = 0;
+                break;
+            }
+        }
+        if(is_original)
+            step1[step1n++] = C[i];
+    }
+
     int step2[10];
-    int step2n = orderUnion(neA, neX, step2, an, nexn);
+    int step2n = 0;
+    for(int i = 0; i < an; i++){
+        int is_original = 1;
+        for(int j = 0; j < nexn; j++){
+            if(A[i] == neX[j]){
+                is_original = 0;
+                break;
+            }
+        }
+        if(is_original)
+            step2[step2n++] = A[i];
+    }
     int step3[10];
-    int step3n = orderSymmetricDifference(step1, step2, step3, step1n, step2n);
-    printf("{ ");
+    int step3n = 0;
+    for(int i = 0; i < un; i++){
+        int is_original = 1;
+        for(int j = 0; j < step2n; j++){
+            if(U[i] == step2[j]){
+                is_original = 0;
+                break;
+            }
+        }
+        if(is_original)
+            step3[step3n++] = U[i];
+    }
+
+
+    int step4[10];
+    int step4n = 0;
+    for(int i = 0; i < step1n; i++){
+        int is_original = 1;
+        for(int j = 0; j < step3n; j++){
+            if(step1[i] == step3[j]){
+                is_original = 0;
+                break;
+            }
+        }
+        if(is_original)
+            step4[step4n++] = step1[i];
+    }
     for(int i = 0; i < step3n; i++){
-        printf("%d ", step3[i]);
+        int is_original = 1;
+        for(int j = 0; j < step1n; j++){
+            if(step3[i] == step1[j]){
+                is_original = 0;
+                break;
+            }
+        }
+        if(is_original)
+            step4[step4n++] = step3[i];
+    }
+
+    printf("{ ");
+    for(int i = 0; i < step4n; i++){
+        printf("%d ", step4[i]);
     }
     printf("} ");
 }
@@ -338,8 +449,8 @@ int main() {
     int X[3] = {1, 7, 8};
     int neX[7] = {2,3,4,5,6,9,10};
 
-    v1(A, 4, B, 5, C, 5, X, 3, neX, 7);
+    v1(A, 4, B, 5, X, 3);
     printf(" = ");
-    v2(neA, 6, C, 5, neX, 7);
+    v2(A, 4, C, 5, X, 3, neX, 7, U, 10);
 
 }

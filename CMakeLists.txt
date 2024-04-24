@@ -11,6 +11,7 @@ add_executable(EducationProject main.c
         lib/data_structures/bitset/bitset.c
         lib/data_structures/bitset/bitset.h
         lab_18.c
+        lab_19.c
 )
 add_subdirectory(lib)
 target_link_libraries(EducationProject algorithms)

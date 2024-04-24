@@ -155,6 +155,9 @@
 		<Unit filename="D:/CLion 2023.3.4/Projects/lab_18.c">
 			<Option target="EducationProject"/>
 		</Unit>
+		<Unit filename="D:/CLion 2023.3.4/Projects/lab_19.c">
+			<Option target="EducationProject"/>
+		</Unit>
 		<Unit filename="D:/CLion 2023.3.4/Projects/lib/algorithms/algorithm.c">
 			<Option target="EducationProject"/>
 			<Option target="algorithms"/>

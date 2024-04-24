@@ -1,3 +1,4 @@
+/*
 #include "lib/data_structures/string_/string_.h"
 
 char string_buffer[MAX_STRING_SIZE + 1];
@@ -11,7 +12,7 @@ int predicate1(int a){
 void zadanie1(char *a){
 /*
 удалить из строки все пробельные символы.
-*/
+*//*
     char *end = a + strLen(a);
     char *dest = strCopyIf(a, end, a, predicate1);
     *dest = '\0';
@@ -24,7 +25,7 @@ void removeAdjacentEqualLetters(char *s){
 /*
 Преобразовать строку, оставляя только один символ в каждой
 последовательности подряд идущих одинаковых символов
-*/
+*//*
     char *snext = s + 1;
     char *sfirst = s;
     char *sfirst2 = s - 1;
@@ -47,7 +48,7 @@ void zadanie3(char *a){
 Преобразовать строку таким образом, чтобы цифры каждого слова были
 перенесены в конец слова без изменения порядка следования их в слове, а
 буквы – в начало.
-*/
+
     WordDescriptor word;
     char *aa = a;
     while(strGetWord(aa, &word)){
@@ -75,7 +76,7 @@ char zadanie4(char *s){
 /*
 Преобразовать строку, заменяя каждую цифру соответствующим ей числом
 пробелов.
-*/
+
     unsigned int size = strLen(s);
     char *i = s;
     while(*i != '\0'){
@@ -96,7 +97,7 @@ char zadanie4(char *s){
 void zadanie5(char *sourse, char *w1, char *w2){
 /*
 Заменить все вхождения слова w1 на слово w2.
- */
+
     size_t w1_len = strLen(w1);
     size_t w2_len = strLen(w2);
     WordDescriptor word_w1 = {w1, w1 + w1_len};
@@ -134,7 +135,7 @@ void zadanie5(char *sourse, char *w1, char *w2){
 bool zadanie6(char *sourse){
 /*
 Определить, упорядочены ли лексикографически слова данного предложения.
- */
+
     WordDescriptor word1, word2;
     strGetWord(sourse, &word1);
     while(strGetWord(word1.end, &word2)){
@@ -158,7 +159,7 @@ bool zadanie6(char *sourse){
 void zadanie7(char *sourse){
 /*
 Вывести слова данной строки в обратном порядке по одному в строке экрана.
- */
+
     WordDescriptor word;
     if(!strGetWord(sourse, &word))
         return;
@@ -175,7 +176,7 @@ void zadanie7(char *sourse){
 int zadanie8(char *sourse){
 /*
 В данной строке соседние слова разделены запятыми. Определить количество слов-палиндромов.
- */
+
     char *ptr = sourse;
     size_t amount = 0;
     for(char *i = sourse; *i != '\0' && ptr != NULL; i++){
@@ -206,7 +207,7 @@ void zadanie9(char *str1, char *str2){
 строки. Если в одной из строк число слов больше, чем в другой, то оставшиеся
 слова этой строки должны быть дописаны в строку-результат. В качестве
 разделителя между словами используйте пробел.
- */
+
     WordDescriptor word1, word2;
     int f_bool, s_bool;
     int switcher = 1;
@@ -252,7 +253,7 @@ void zadanie9(char *str1, char *str2){
 void zadanie10(char *sourse){
 /*
 Преобразовать строку, изменив порядок следования слов в строке на обратный.
-*/
+
     WordDescriptor array[20];
     WordDescriptor word;
     char *ptr = sourse;
@@ -279,7 +280,7 @@ void zadanie11(char *sourse){
 /*
 Вывести слово данной строки, предшествующее первому из слов, содержащих
 букву "а". Регистр значения не имеет.
-*/
+
     WordDescriptor word1, word2;
     char *prt1 = sourse;
     int a = 1;
@@ -308,7 +309,7 @@ void zadanie12(char *str1, char *str2){
 /*
 Даны две строки. Определить последнее из слов первой строки, которое есть
 во второй строке.
-*/
+
     char string[MAX_WORD_SIZE];
     WordDescriptor word1, word2;
     while(strGetWord(str1, &word1) &&
@@ -336,7 +337,7 @@ void zadanie12(char *str1, char *str2){
 bool zadanie13(char *str){
 /*
 Определить, есть ли в данной строке одинаковые слова.
-*/
+
     WordDescriptor word1, word2;
     while(strGetWord(str, &word1)){
         char *str_copy = word1.end;
@@ -366,7 +367,7 @@ bool zadanie14(char *str){
 /*
 Определить, есть ли в данной строке пара слов, составленных из одинакового
 набора букв.
-*/
+
     char *buffer = string_buffer;
     for(char *i = str; *i != '\0'; i++, buffer++)
         *buffer = *i;
@@ -398,7 +399,7 @@ bool zadanie14(char *str){
 void zadanie15(char *str){
 /*
 Получить строку из слов данной строки, которые отличны от последнего слова.
-*/
+
     WordDescriptor end_word;
     char *str_copy = str;
     strGetWord(str_copy, &end_word);
@@ -431,7 +432,7 @@ void zadanie16(char *str1, char *str2){
 /*
 Даны две строки s1 и s2. Пусть w – первое из слов строки s1, которое есть и в
 строке s2. Найти слово, предшествующее первому вхождению w в s1.
-*/
+
     WordDescriptor w;
     char *str1_copy = str1;
     strGetWord(str1_copy, &w);
@@ -462,7 +463,7 @@ void zadanie17(char *str){
 /*
 Задача на удаление слов из строки (любую одну на выбор):
  Удалить из данной строки слова-палиндромы.
-*/
+
     WordDescriptor word;
     char *buffer = string_buffer;
     while(strGetWord(str, &word)){
@@ -491,7 +492,7 @@ void zadanie18(char *str1, int n1, char *str2, int n2){
 Даны две строки. Пусть n1 – число слов в первой строке, а n2 – во второй.
 Требуется дополнить строку, содержащую меньшее количество слов, последними
 словами строки, в которой содержится большее количество слов.
- */
+
     char *min, *max;
     if(n1 > n2){
         min = str2;
@@ -527,7 +528,7 @@ void zadanie18(char *str1, int n1, char *str2, int n2){
 bool zadanie19(char *str, char *word){
 /*
 Определить, входит ли в данную строку каждая буква данного слова.
-*/
+
     for(char *i = str, *j = word; *j != '\0';){
         if(*i == *j){
             j++;
@@ -781,8 +782,8 @@ void test(){
 }
 
 
-int main(){
-    test();
+//int main(){
+//    test();
 
 
 
@@ -957,4 +958,4 @@ int main(){
     printf("%d",zadanie19(a,b));
     */
 
-}
+//}

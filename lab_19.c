@@ -98,8 +98,6 @@ void zadanie3(){
     }
     fclose(file);
     file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie3.txt", "a");
-    for(int i = 0; i < size_buf; i++)
-        printf("%d ", buf[i]);
     if(size_buf_ > 1){
         int result = 0;
         if((buf_[1] == '*' || buf_[1] == '/') &&
@@ -121,9 +119,48 @@ void zadanie3(){
 
 
 
+void zadanie4(char *sub){
+/*
+Дан текстовый файл. Сохранить в файле только те слова, которые
+содержат данную последовательность символов.
+*/
+    FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie4.txt", "r");
+    char a[100];
+    fgets(a, 100, file);
+    fclose(file);
+    file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie4_result.txt", "w");
+    WordDescriptor word;
+    char *ptr = a;
+    while(strGetWord(ptr, &word)){
+        int is_true = 1;
+        for(char *i = sub; i < sub + strLen(sub); i++){
+            int is_finded = 0;
+            for(char *j = word.begin; j < word.end; j++){
+                if(*j == *i){
+                    is_finded = 1;
+                    break;
+                }
+            }
+            if(!is_finded) {
+                is_true = 0;
+                break;
+            }
+        }
+        if(is_true){
+            for(char *i = word.begin; i < word.end; i++)
+                fputc(*i, file);
+            fputc(' ', file);
+        }
+        ptr = word.end;
+    }
+    fclose(file);
+}
+
+
+
 
 
 
 int main(){
-    zadanie3();
+    zadanie4("o");
 }

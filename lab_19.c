@@ -234,8 +234,45 @@ void zadanie6(int x){
     fclose(filew);
 }
 
+
+
+
+
+
+void zadanie7(){
+/*
+Дан бинарный файл целых чисел. Нулевых компонент в файле нет.
+Число отрицательных компонент равно числу положительных.
+Преобразовать файл таким образом, чтобы сначала были
+положительные числа, а затем отрицательные. Порядок следования
+как положительных, так и отрицательных чисел сохранить.
+*/
+    FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie7.txt", "rb");
+    FILE *filew = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie7_result.txt", "wb");
+    int plus[100];
+    int size_plus = 0;
+    int minus[100];
+    int size_minus = 0;
+    while(!feof(file)){
+        int digit;
+        fread(&digit, sizeof(digit), 1, file);
+        if(digit >= 0)
+            plus[size_plus++] = digit;
+        else
+            minus[size_minus++] = digit;
+    }
+    for(int i = 0; i < size_plus; i++)
+        fwrite(&plus[i], sizeof(plus[i]), 1, filew);
+    for(int i = 0; i < size_minus; i++)
+        fwrite(&minus[i], sizeof(minus[i]), 1, filew);
+    fclose(file);
+    fclose(filew);
+}
+
+
 int main(){
 
+    /* Zadanie 6
     FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie6.txt", "wb");
     for(int i = 0; i < 5; i++){
         for(int j = 3; j >= 0; j--){
@@ -244,6 +281,24 @@ int main(){
         }
     }
     fclose(file);
+    */
 
-    zadanie6(0);
+    FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie7.txt", "wb");
+    for(int i = 0; i < 100; i++){
+        if(i % 2) {
+            fwrite(&i, sizeof(i), 1, file);
+        }else {
+            int j = -i;
+            fwrite(&j, sizeof(j), 1, file);
+        }
+    }
+    fclose(file);
+    zadanie7();
+    file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie7_result.txt", "rb");
+    while(!feof(file)){
+        int digit;
+        fread(&digit, sizeof(digit), 1, file);
+        printf("%d ", digit);
+    }
+    fclose(file);
 }

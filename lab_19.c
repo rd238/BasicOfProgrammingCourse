@@ -270,6 +270,40 @@ void zadanie7(){
 }
 
 
+
+
+
+void zadanie8(){
+/*
+Дан бинарный файл квадратных матриц порядка n. Преобразовать
+его, заменив каждую матрицу, не являющуюся симметричной,
+транспонированной.
+*/
+    FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie8.txt", "rb");
+    FILE *filew = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie8_result.txt", "wb");
+    int size;
+    fread(&size, sizeof(size), 1, file);
+    while(!feof(file)) {
+        matrix m = matrixGetMem(size, size);
+        for(int i = 0; i < size; i++)
+            for(int j = 0; j < size; j++)
+                fread(&m.values[i][j], sizeof(m.values[i][j]), 1, file);
+        if(!matrixIsSymmetric(&m)){
+            matrixTransposeSquare(&m);
+        }
+        for(int i = 0; i < size; i++)
+            for(int j = 0; j < size; j++)
+                fwrite(&m.values[i][j], sizeof(m.values[i][j]), 1, filew);
+        matrixOutput(m);
+        matrixFreeMem(&m);
+    }
+    fclose(file);
+    fclose(filew);
+}
+
+
+
+
 int main(){
 
     /* Zadanie 6
@@ -283,6 +317,7 @@ int main(){
     fclose(file);
     */
 
+    /* Zadanie 7
     FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie7.txt", "wb");
     for(int i = 0; i < 100; i++){
         if(i % 2) {
@@ -301,4 +336,17 @@ int main(){
         printf("%d ", digit);
     }
     fclose(file);
+     */
+
+    FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie8.txt", "wb");
+    int size = 3;
+    fwrite(&size,sizeof(int), 1, file);
+    for(int q = 0; q < 10; q++){
+        for(int i = 0; i < size; i++)
+            for(int j = 0; j < size; j++)
+                fwrite(&i,sizeof(int), 1, file);
+    }
+    fclose(file);
+    zadanie8();
+
 }

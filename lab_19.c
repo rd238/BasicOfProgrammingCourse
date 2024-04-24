@@ -304,6 +304,49 @@ void zadanie8(){
 
 
 
+typedef struct{
+    char *name;
+    int result;
+} sportsmen;
+
+
+void zadanie9(int n){
+/*
+В бинарном файле структур хранится информация о спортсменах:
+Ф.И.О., наилучший результат. Требуется сформировать команду из n
+лучших спортсменов. Преобразовать файл, сохранив в нем
+информацию только о членах команды.
+*/
+    FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie9.txt", "rb");
+    FILE *filew = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie9_result.txt", "wb");
+    sportsmen a[20];
+    int size_a = 0;
+    while(!feof(file)){
+        sportsmen b;
+        fread(&b, sizeof(b), 1, file);
+        a[size_a++] = b;
+    }
+    for(int i = 0; i < size_a - 1; i++){
+        int min = i;
+        for(int j = i; j < size_a; j++){
+            if(a[i].result < a[j].result)
+                min = j;
+        }
+        if(min != i){
+            sportsmen temp = a[i];
+            a[i] = a[min];
+            a[min] = temp;
+        }
+    }
+    for(int i = 0; i < n; i++){
+        fwrite(&a[i], sizeof(a[i]), 1, filew);
+        printf("name:%s score:%d\n", a[i].name, a[i].result);
+    }
+    fclose(file);
+    fclose(filew);
+}
+
+
 int main(){
 
     /* Zadanie 6
@@ -338,6 +381,7 @@ int main(){
     fclose(file);
      */
 
+    /* zadanie 8
     FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie8.txt", "wb");
     int size = 3;
     fwrite(&size,sizeof(int), 1, file);
@@ -348,5 +392,16 @@ int main(){
     }
     fclose(file);
     zadanie8();
+    */
 
+
+
+    FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie9.txt", "wb");
+    for(int i = 0; i < 6; i++){
+        sportsmen b = {"noname", i * 5};
+        fwrite(&b, sizeof(b), 1, file);
+    }
+    fclose(file);
+
+    zadanie9(4);
 }

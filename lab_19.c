@@ -160,7 +160,33 @@ void zadanie4(char *sub){
 
 
 
-
+void zadanie5(){
+/*
+Дан текстовый файл. Преобразовать его, оставив в каждой строке
+только самое длинное слово.
+*/
+    FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie5.txt", "r");
+    FILE *file_res = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie5_result.txt", "w");
+    while(!feof(file)){
+        char str[100];
+        fgets(str, 99, file);
+        long long max = 0;
+        char max_str[30];
+        WordDescriptor word;
+        char *ptr = str;
+        while(strGetWord(ptr, &word)){
+            if(word.end - word.begin > max){
+                wordDescriptionToString(word, max_str);
+                max = word.end - word.begin;
+            }
+            ptr = word.end;
+        }
+        fputs(max_str, file_res);
+        fputs("\n", file_res);
+    }
+    fclose(file);
+    fclose(file_res);
+}
 int main(){
-    zadanie4("o");
+    zadanie5();
 }

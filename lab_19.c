@@ -347,6 +347,64 @@ void zadanie9(int n){
 }
 
 
+
+
+typedef struct{
+    char *name;
+    int price_one;
+    int price_all;
+    int amount;
+} stock_product;
+
+typedef struct{
+    char *name;
+    int amount;
+} order_product;
+
+void zadanie10(){
+/*
+В бинарном файле f структур хранится следующая информация о
+товарах, имеющихся на складе: наименование товара, цена единицы
+товара, общая стоимость и количество. В бинарном файле структур g
+хранится информация о заказах: наименование товара и его
+количество. Обновить файл f с учетом отпущенных товаров в
+соответствии с заказами из файла g. Если товар отпущен полностью,
+запись о нем из файла f удаляется.
+*/
+    FILE *file_f = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie10f.txt", "rb");
+    FILE *file_g = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie10g.txt", "rb");
+    FILE *filew = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie10_result.txt", "wb");
+    stock_product a[20];
+    int size_a = 0;
+    order_product b[20];
+    int size_b = 0;
+    while(!feof(file_f)){
+        stock_product product;
+        fread(&product, sizeof(product), 1, file_f);
+        a[size_a++] = product;
+    }
+    while(!feof(file_g)){
+        order_product product;
+        fread(&product, sizeof(product), 1, file_g);
+        b[size_b++] = product;
+    }
+    for(int i = 0; i < size_a; i++){
+        for(int j = 0; j < size_b; j++){
+            if(a[i].name == b[j].name){
+                a[i].amount -= b[j].amount;
+            }
+        }
+        if(a[i].amount > 0)
+            fwrite(&a[i], sizeof(a[i]), 1, filew);
+    }
+    fclose(file_f);
+    fclose(file_g);
+    fclose(filew);
+}
+
+
+
+
 int main(){
 
     /* Zadanie 6
@@ -395,7 +453,7 @@ int main(){
     */
 
 
-
+    /*
     FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie9.txt", "wb");
     for(int i = 0; i < 6; i++){
         sportsmen b = {"noname", i * 5};
@@ -404,4 +462,39 @@ int main(){
     fclose(file);
 
     zadanie9(4);
+     */
+
+
+    FILE *file_f = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie10f.txt", "wb");
+    FILE *file_g = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie10g.txt", "wb");
+    stock_product a1 = {"product1", 100, 5000, 50};
+    stock_product a2 = {"product2", 10, 300, 30};
+    stock_product a3 = {"product3", 50, 5000, 100};
+    stock_product a4 = {"product4", 100, 5000, 50};
+    stock_product a5 = {"product5", 23, 2300, 100};
+    fwrite(&a1, sizeof(a1), 1, file_f);
+    fwrite(&a2, sizeof(a2), 1, file_f);
+    fwrite(&a3, sizeof(a3), 1, file_f);
+    fwrite(&a4, sizeof(a4), 1, file_f);
+    fwrite(&a5, sizeof(a5), 1, file_f);
+    order_product b1 = {"product1", 50};
+    order_product b2 = {"product3", 90};
+    order_product b3 = {"product5", 100};
+    fwrite(&b1, sizeof(b1), 1, file_g);
+    fwrite(&b2, sizeof(b2), 1, file_g);
+    fwrite(&b3, sizeof(b3), 1, file_g);
+    fclose(file_f);
+    fclose(file_g);
+
+    zadanie10();
+
+    FILE *filew = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie10_result.txt", "rb");
+    while(!feof(filew)){
+        stock_product a;
+        fread(&a, sizeof(a), 1, filew);
+        printf("name:%s price:%d amount:%d\n", a.name, a.price_one, a.amount);
+    }
+    fclose(filew);
+
+
 }

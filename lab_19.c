@@ -187,6 +187,63 @@ void zadanie5(){
     fclose(file);
     fclose(file_res);
 }
+
+
+
+
+
+typedef struct{
+    int coefficient;
+    int degree;
+} polynomial;
+
+
+
+void zadanie6(int x){
+/*
+В бинарном файле структур хранятся многочлены в порядке
+убывания степеней. Каждая структура содержит два поля: показатель
+степени члена и коэффициент. Члены с нулевыми коэффициентами
+не хранятся. Свободный член присутствует обязательно, даже если он
+равен нулю. Удалить из файла многочлены, для которых данное x
+является корнем.
+*/
+    FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie6.txt", "rb");
+    FILE *filew = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie6_result.txt", "wb");
+    while(!feof(file)){
+        polynomial poly;
+        int sum = 0;
+        polynomial a[10];
+        int size_a = 0;
+        while(fread(&poly, sizeof(poly), 1, file)){
+            a[size_a++] = poly;
+            int b = poly.degree;
+            while(poly.degree--)
+                sum += x * x;
+            sum *= poly.coefficient;
+            if(!b)
+                break;
+        }
+        if(sum == 0){
+            for(int i = 0; i < size_a; i++){
+                fwrite(&a[i], sizeof(a[i]), 1, filew);
+            }
+        }
+    }
+    fclose(file);
+    fclose(filew);
+}
+
 int main(){
-    zadanie5();
+
+    FILE *file = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie6.txt", "wb");
+    for(int i = 0; i < 5; i++){
+        for(int j = 3; j >= 0; j--){
+            polynomial a = {i + 1, j};
+            fwrite(&a, sizeof(a), 1, file);
+        }
+    }
+    fclose(file);
+
+    zadanie6(0);
 }

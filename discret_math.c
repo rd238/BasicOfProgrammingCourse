@@ -441,6 +441,12 @@ void v2(int *A, size_t an, int *C, size_t cn, int *X,
 
 
 
+
+
+
+
+
+
 void generationOfSets(int k){
     long long nk = 1 << k;
     for(long long i = 0; i < nk; i++){
@@ -459,10 +465,18 @@ void generationOfSets(int k){
     }
 }
 
+
+
+
+
+
+
+
+
 void generationCombinations_(int *arr, int n, int k, int *visited, int *result, int result_index){
     if(result_index == k){
         int is_sorted = 1;
-        for(int i = 0; i < k - 1; i++)
+        for(int i = 0; i < k - 1 && is_sorted; i++)
             if(result[i] >= result[i + 1])
                 is_sorted = 0;
         if(is_sorted) {
@@ -482,7 +496,6 @@ void generationCombinations_(int *arr, int n, int k, int *visited, int *result, 
         }
     }
 }
-
 void generationCombinations(int n, int k) {
     int arr[n];
     int visited[n];
@@ -496,7 +509,42 @@ void generationCombinations(int n, int k) {
 
 
 
-void generationPermutations_(int *arr, int n, int k, int *visited, int *result, int result_index){
+
+
+
+void generationPermutations_(int n, int *visited, int *result, int result_index){
+    if(result_index == n){
+        for (int i = 0; i < n; i++) {
+            printf("%d ", result[i]);
+        }
+        printf("\n");
+        return;
+    }
+    for(int i = 0; i < n; i++){
+        if(!visited[i]){
+            result[result_index] = i + 1;
+            visited[i] = 1;
+            generationPermutations_(n, visited, result, result_index + 1);
+            visited[i] = 0;
+        }
+    }
+}
+void generationPermutations(int n) {
+    int visited[n];
+    int result[n];
+    for(int i = 0; i < n; i++)
+        visited[i] = 0;
+    generationPermutations_(n, visited, result, 0);
+}
+
+
+
+
+
+
+
+
+void generationPlacements_(int *arr, int n, int k, int *visited, int *result, int result_index){
     if(result_index == k){
         for (int i = 0; i < k; i++) {
             printf("%d ", result[i]);
@@ -508,13 +556,12 @@ void generationPermutations_(int *arr, int n, int k, int *visited, int *result, 
         if(!visited[i]){
             result[result_index] = arr[i];
             visited[i] = 1;
-            generationPermutations_(arr, n, k, visited, result, result_index + 1);
+            generationPlacements_(arr, n, k, visited, result, result_index + 1);
             visited[i] = 0;
         }
     }
 }
-
-void generationPermutations(int n, int k) {
+void generationPlacements(int n, int k) {
     int arr[n];
     int visited[n];
     int result[k];
@@ -522,15 +569,20 @@ void generationPermutations(int n, int k) {
         arr[i] = i + 1;
     for(int i = 0; i < n; i++)
         visited[i] = 0;
-    generationPermutations_(arr, n, k, visited, result, 0);
+    generationPlacements_(arr, n, k, visited, result, 0);
 }
+
+
+
 
 
 int main() {
     time_t t = time(NULL);
     struct tm* aTm = localtime(&t);
     printf("%02d:%02d:%02d \n", aTm->tm_hour, aTm->tm_min, aTm->tm_sec);
-    generationCombinations(10, 3);
+
+    generationPlacements(9, 4);
+    
     time_t t2 = time(NULL);
     struct tm* aTm2 = localtime(&t2);;
     printf("%02d:%02d:%02d \n", aTm2->tm_hour, aTm2->tm_min, aTm2->tm_sec);

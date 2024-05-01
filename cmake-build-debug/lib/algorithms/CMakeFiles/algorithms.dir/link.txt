@@ -1,2 +1,2 @@
-"D:\CLion 2023.3.4\bin\mingw\bin\ar.exe" qc libalgorithms.a CMakeFiles/algorithms.dir/algorithm.c.obj
-"D:\CLion 2023.3.4\bin\mingw\bin\ranlib.exe" libalgorithms.a
+C:\CLION2~1.1\bin\mingw\bin\ar.exe qc libalgorithms.a CMakeFiles/algorithms.dir/algorithm.c.obj
+C:\CLION2~1.1\bin\mingw\bin\ranlib.exe libalgorithms.a

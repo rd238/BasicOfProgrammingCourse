@@ -118,8 +118,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/CLion 2023.3.4/Projects/cmake-build-debug",
-		"source" : "D:/CLion 2023.3.4/Projects"
+		"build" : "C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug",
+		"source" : "C:/Users/logca/CLionProjects/BasicOfProgrammingCourse"
 	},
 	"version" : 
 	{

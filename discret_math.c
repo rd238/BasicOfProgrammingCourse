@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <time.h>
 /*
 3. Программно реализовать операции над множествами, используя
 следующие способы представления множества в памяти ЭВМ:
@@ -440,17 +440,98 @@ void v2(int *A, size_t an, int *C, size_t cn, int *X,
 }
 
 
+
+void generationOfSets(int k){
+    long long nk = 1 << k;
+    for(long long i = 0; i < nk; i++){
+        long long m = i;
+        printf("{");
+        for(long long j = k; j >= 0; j--){
+            if(1 & m){
+                printf("%lld ", j);
+            }
+            m >>= 1;
+        }
+        if(i != 0)
+            printf("\b}\n");
+        else
+            printf("}\n");
+    }
+}
+
+void generationCombinations_(int *arr, int n, int k, int *visited, int *result, int result_index){
+    if(result_index == k){
+        int is_sorted = 1;
+        for(int i = 0; i < k - 1; i++)
+            if(result[i] >= result[i + 1])
+                is_sorted = 0;
+        if(is_sorted) {
+            for (int i = 0; i < k; i++) {
+                printf("%d ", result[i]);
+            }
+            printf("\n");
+        }
+        return;
+    }
+    for(int i = 0; i < n; i++){
+        if(!visited[i]){
+            result[result_index] = arr[i];
+            visited[i] = 1;
+            generationCombinations_(arr, n, k, visited, result, result_index + 1);
+            visited[i] = 0;
+        }
+    }
+}
+
+void generationCombinations(int n, int k) {
+    int arr[n];
+    int visited[n];
+    int result[k];
+    for (int i = 0; i < n; i++)
+        arr[i] = i + 1;
+    for(int i = 0; i < n; i++)
+        visited[i] = 0;
+    generationCombinations_(arr, n, k, visited, result, 0);
+}
+
+
+
+void generationPermutations_(int *arr, int n, int k, int *visited, int *result, int result_index){
+    if(result_index == k){
+        for (int i = 0; i < k; i++) {
+            printf("%d ", result[i]);
+        }
+        printf("\n");
+        return;
+        }
+    for(int i = 0; i < n; i++){
+        if(!visited[i]){
+            result[result_index] = arr[i];
+            visited[i] = 1;
+            generationPermutations_(arr, n, k, visited, result, result_index + 1);
+            visited[i] = 0;
+        }
+    }
+}
+
+void generationPermutations(int n, int k) {
+    int arr[n];
+    int visited[n];
+    int result[k];
+    for (int i = 0; i < n; i++)
+        arr[i] = i + 1;
+    for(int i = 0; i < n; i++)
+        visited[i] = 0;
+    generationPermutations_(arr, n, k, visited, result, 0);
+}
+
+
 int main() {
-    int U[10] = {1,2,3,4,5,6,7,8,9,10};
-    int A[4] = {3, 7, 9, 10};
-    int neA[6] = {1,2,4,5,6,8};
-    int B[5] = {1, 3, 8, 9, 10};
-    int C[5] = {2, 4, 5, 6, 7};
-    int X[3] = {1, 7, 8};
-    int neX[7] = {2,3,4,5,6,9,10};
-
-    v1(A, 4, B, 5, X, 3);
-    printf(" = ");
-    v2(A, 4, C, 5, X, 3, neX, 7, U, 10);
-
+    time_t t = time(NULL);
+    struct tm* aTm = localtime(&t);
+    printf("%02d:%02d:%02d \n", aTm->tm_hour, aTm->tm_min, aTm->tm_sec);
+    generationCombinations(10, 3);
+    time_t t2 = time(NULL);
+    struct tm* aTm2 = localtime(&t2);;
+    printf("%02d:%02d:%02d \n", aTm2->tm_hour, aTm2->tm_min, aTm2->tm_sec);
 }

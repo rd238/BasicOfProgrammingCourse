@@ -1,5 +1,13 @@
 #include <stdio.h>
 #include <time.h>
+
+void printArray(int *array, int n){
+    printf("{");
+    for(int i = 0; i < n; i++){
+        printf("%d ", array[i]);
+    }
+    printf("\b}\n");
+}
 /*
 3. Программно реализовать операции над множествами, используя
 следующие способы представления множества в памяти ЭВМ:
@@ -514,10 +522,7 @@ void generationCombinations(int n, int k) {
 
 void generationPermutations_(int n, int *visited, int *result, int result_index){
     if(result_index == n){
-        for (int i = 0; i < n; i++) {
-            printf("%d ", result[i]);
-        }
-        printf("\n");
+        printArray(result, n);
         return;
     }
     for(int i = 0; i < n; i++){
@@ -546,10 +551,7 @@ void generationPermutations(int n) {
 
 void generationPlacements_(int *arr, int n, int k, int *visited, int *result, int result_index){
     if(result_index == k){
-        for (int i = 0; i < k; i++) {
-            printf("%d ", result[i]);
-        }
-        printf("\n");
+        printArray(result, k);
         return;
         }
     for(int i = 0; i < n; i++){
@@ -574,16 +576,108 @@ void generationPlacements(int n, int k) {
 
 
 
+void searchAndReturn_(int *M, int *R, int nM, int index){
+    for(int i = 0; i < nM; i++){
+        R[index] = M[i];
+        if(nM == index){
+            printArray(R, index);
+            break;
+        }else {
+            searchAndReturn_(M, R, nM, index + 1);
+        }
+    }
+    return;
+}
+
+void searchAndReturn(int nM){
+    int M[nM];
+    int R[nM];
+    for(int i = 0; i < nM; i++)
+        M[i] = i;
+    searchAndReturn_(M, R, nM, 0);
+}
+
+
+
+void combination_(int *M, int *C, int nM, int k, int i, int b){
+    for(;b < nM - k + i + 1; b++){
+        C[i] = M[b];
+        if(i == k){
+            printArray(C, k);
+            break;
+        }else{
+            combination_(M, C, nM, k, i + 1, b + 1);
+        }
+    }
+    return;
+}
+
+void combination(int nM, int k){
+    int M[nM];
+    int C[k];
+    for(int i = 0; i < nM; i++)
+        M[i] = i + 1;
+    combination_(M, C, nM, k, 0, 0);
+}
+
+void swap(int *a, int *b){
+    int temp = *a;
+    *a = *b;
+    *b = *a;
+}
+
+void permutation_(int *M, int *P, int nM, int i){
+    if(i == nM){
+        printArray(P, nM);
+        return;
+    }
+    for(int j = 0; j < nM; j++){
+        P[i] = M[j];
+            swap(&M[j], &M[nM - 1]);
+            permutation_(M, P, nM , i + 1);
+            swap(&M[nM - 1],&M[j]);
+    }
+}
+
+void permutation(int nM){
+    int M[nM];
+    int P[nM];
+    for(int i = 0; i < nM; i++)
+        M[i] = i;
+    permutation_(M, P, nM, 0);
+}
+
+int razmes(int n, int k){
+    int d = n - k;
+    int d1 = 1;
+    while(d != 0) {
+        d1 *= d;
+        d -= 1;
+    }
+    int n1 = 1;
+    while(n != 0) {
+        n1 *= n;
+        n -= 1;
+    }
+    return n1 / d1;
+}
 
 
 int main() {
+    /*
     time_t t = time(NULL);
     struct tm* aTm = localtime(&t);
-    printf("%02d:%02d:%02d \n", aTm->tm_hour, aTm->tm_min, aTm->tm_sec);
+    printf("%02d:%02d:%02d \n", aTm->tm_hour, aTm->tm_min, aTm->tm_sec);*/
+    printf("7 x2      y%d\n", razmes(9, 2));
+    printf("7 x3      y%d\n", razmes(9, 3));
+    printf("7 x4      y%d\n", razmes(9, 4));
+    printf("7 x5      y%d\n", razmes(9, 5));
+    printf("7 x6      y%d\n", razmes(9, 6));
+    printf("7 x7      y%d\n", razmes(9, 7));
+    printf("7 x8      y%d\n", razmes(9, 8));
 
-    generationPlacements(9, 4);
-    
+    /*
     time_t t2 = time(NULL);
     struct tm* aTm2 = localtime(&t2);;
-    printf("%02d:%02d:%02d \n", aTm2->tm_hour, aTm2->tm_min, aTm2->tm_sec);
+    printf("%02d:%02d:%02d \n", aTm2->tm_hour, aTm2->tm_min, aTm2->tm_sec);*/
 }

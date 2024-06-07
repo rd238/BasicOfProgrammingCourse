@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 
 void printArray(int *array, int n){
@@ -593,7 +594,7 @@ void searchAndReturn(int nM){
     int M[nM];
     int R[nM];
     for(int i = 0; i < nM; i++)
-        M[i] = i;
+        M[i] = i + 1;
     searchAndReturn_(M, R, nM, 0);
 }
 
@@ -663,21 +664,131 @@ int razmes(int n, int k){
 }
 
 
-int main() {
-    /*
-    time_t t = time(NULL);
-    struct tm* aTm = localtime(&t);
-    printf("%02d:%02d:%02d \n", aTm->tm_hour, aTm->tm_min, aTm->tm_sec);*/
-    printf("7 x2      y%d\n", razmes(9, 2));
-    printf("7 x3      y%d\n", razmes(9, 3));
-    printf("7 x4      y%d\n", razmes(9, 4));
-    printf("7 x5      y%d\n", razmes(9, 5));
-    printf("7 x6      y%d\n", razmes(9, 6));
-    printf("7 x7      y%d\n", razmes(9, 7));
-    printf("7 x8      y%d\n", razmes(9, 8));
-
-    /*
-    time_t t2 = time(NULL);
-    struct tm* aTm2 = localtime(&t2);;
-    printf("%02d:%02d:%02d \n", aTm2->tm_hour, aTm2->tm_min, aTm2->tm_sec);*/
+void printSAR(int *D, int n) {
+    printf("{ ");
+    for(int i = 0; i < n; i++){
+        if(D[i])
+            printf("%d ", i + 1);
+    }
+    printf("\b }\n");
 }
+
+void sAR_(int *R, int nM, int index) {
+    for(int i = 0; i < 2; i++){
+        R[index] = i;
+        if(nM == index){
+            printSAR(R, index);
+            return;
+        }else{
+            sAR_(R, nM, index + 1);
+        }
+    }
+}
+
+
+void sAR(int nM){
+    int M[nM];
+    int R[nM];
+    for(int i = 0; i < nM; i++)
+        M[i] = i + 1;
+    sAR_( R, nM, 0);
+}
+
+
+
+
+
+
+
+//Структура для сохранения всех перестановок
+typedef struct {
+    int size;
+    int max_size;
+    int **arr;
+} set2;
+//Структура для сохранения множества работ
+typedef struct {
+    int size;
+    int **arr;
+} worker;
+
+//Генерирует все возможные перестановки и записывает в структуру M
+void gp_(int n, int *visited, int *result, int result_index, set2 *M){
+    if(result_index == n){
+        for(int i = 0; i < n; i++)
+            M->arr[M->size][i] = result[i];
+        M->size++;
+        return;
+    }
+    for(int i = 0; i < n; i++){
+        if(!visited[i]){
+            result[result_index] = i;
+            visited[i] = 1;
+            gp_(n, visited, result, result_index + 1, M);
+            visited[i] = 0;
+        }
+    }
+}
+//Генерирует все возможные перестановки и записывает в структуру M
+void gP(set2 *M, int n) {
+    int visited[n];
+    int result[n];
+    for(int i = 0; i < n; i++)
+        visited[i] = 0;
+    gp_(n, visited, result, 0, M);
+}
+
+//Функция распознование решения
+void test() {
+    //Массив всех возможных перестановок 4-х элементного множества
+    set2 b = {0,24, malloc(sizeof(int *) * 24)};
+    for(int i = 0; i < b.max_size; i++) {
+        b.arr[i] = malloc(sizeof(int) * 4);
+    }
+    //Заполняет варианты работ
+    worker work = {4, malloc(sizeof(int *) * 4)};
+    for(int i = 0; i < 4; i++) {
+        work.arr[i] = malloc(sizeof(int) * 4);
+        for(int j = 0; j < 4; j++)
+            scanf("%d", &work.arr[i][j]);
+    }
+
+    gP(&b,4);
+
+    for(int i = 0; i < b.max_size; i++) {
+        int is_find = 1;
+        for(int j = 0; j < 4; j++) {
+            int is_find1 = 0;
+            for(int k = 0; k < work.size; k++) {
+                if(work.arr[j][k] == b.arr[i][j])
+                    is_find1 = 1;
+            }
+            if(!is_find1) {
+                is_find = 0;
+                break;
+            }
+        }
+        if(is_find) {
+            printf("solution found\n solution:\n");
+            for(int j = 0; j < 4; j++) {
+                printf("%d ", b.arr[i][j]);
+            }
+            printf("\n");
+        }
+    }
+
+    for(int i = 0; i < 4; i++)
+        free(work.arr[i]);
+    free(work.arr);
+
+    for(int i = 0; i < b.max_size; i++) {
+        free(b.arr[i]);
+    }
+    free(b.arr);
+}
+
+
+//int main() {
+//    //Ввод - (размер массива работ всегда 4)(множество работ(возможно повторение))
+  //  test();
+//}

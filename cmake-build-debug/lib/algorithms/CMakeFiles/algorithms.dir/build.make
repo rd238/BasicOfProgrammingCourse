@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -72,15 +72,15 @@ lib/algorithms/CMakeFiles/algorithms.dir/algorithm.c.obj: lib/algorithms/CMakeFi
 lib/algorithms/CMakeFiles/algorithms.dir/algorithm.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/algorithms/algorithm.c
 lib/algorithms/CMakeFiles/algorithms.dir/algorithm.c.obj: lib/algorithms/CMakeFiles/algorithms.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/algorithms/CMakeFiles/algorithms.dir/algorithm.c.obj"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\algorithms && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/algorithms/CMakeFiles/algorithms.dir/algorithm.c.obj -MF CMakeFiles\algorithms.dir\algorithm.c.obj.d -o CMakeFiles\algorithms.dir\algorithm.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\algorithm.c
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\algorithms && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/algorithms/CMakeFiles/algorithms.dir/algorithm.c.obj -MF CMakeFiles\algorithms.dir\algorithm.c.obj.d -o CMakeFiles\algorithms.dir\algorithm.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\algorithm.c
 
 lib/algorithms/CMakeFiles/algorithms.dir/algorithm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/algorithms.dir/algorithm.c.i"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\algorithms && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\algorithm.c > CMakeFiles\algorithms.dir\algorithm.c.i
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\algorithms && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\algorithm.c > CMakeFiles\algorithms.dir\algorithm.c.i
 
 lib/algorithms/CMakeFiles/algorithms.dir/algorithm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/algorithms.dir/algorithm.c.s"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\algorithms && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\algorithm.c -o CMakeFiles\algorithms.dir\algorithm.c.s
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\algorithms && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\algorithm.c -o CMakeFiles\algorithms.dir\algorithm.c.s
 
 # Object files for target algorithms
 algorithms_OBJECTS = \

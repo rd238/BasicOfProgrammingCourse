@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -72,85 +72,113 @@ CMakeFiles/EducationProject.dir/main.c.obj: CMakeFiles/EducationProject.dir/flag
 CMakeFiles/EducationProject.dir/main.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/main.c
 CMakeFiles/EducationProject.dir/main.c.obj: CMakeFiles/EducationProject.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/EducationProject.dir/main.c.obj"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/main.c.obj -MF CMakeFiles\EducationProject.dir\main.c.obj.d -o CMakeFiles\EducationProject.dir\main.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\main.c
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/main.c.obj -MF CMakeFiles\EducationProject.dir\main.c.obj.d -o CMakeFiles\EducationProject.dir\main.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\main.c
 
 CMakeFiles/EducationProject.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/EducationProject.dir/main.c.i"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\main.c > CMakeFiles\EducationProject.dir\main.c.i
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\main.c > CMakeFiles\EducationProject.dir\main.c.i
 
 CMakeFiles/EducationProject.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/EducationProject.dir/main.c.s"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\main.c -o CMakeFiles\EducationProject.dir\main.c.s
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\main.c -o CMakeFiles\EducationProject.dir\main.c.s
 
 CMakeFiles/EducationProject.dir/lib/algorithms/array/array.c.obj: CMakeFiles/EducationProject.dir/flags.make
 CMakeFiles/EducationProject.dir/lib/algorithms/array/array.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/algorithms/array/array.c
 CMakeFiles/EducationProject.dir/lib/algorithms/array/array.c.obj: CMakeFiles/EducationProject.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/EducationProject.dir/lib/algorithms/array/array.c.obj"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/lib/algorithms/array/array.c.obj -MF CMakeFiles\EducationProject.dir\lib\algorithms\array\array.c.obj.d -o CMakeFiles\EducationProject.dir\lib\algorithms\array\array.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\array\array.c
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/lib/algorithms/array/array.c.obj -MF CMakeFiles\EducationProject.dir\lib\algorithms\array\array.c.obj.d -o CMakeFiles\EducationProject.dir\lib\algorithms\array\array.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\array\array.c
 
 CMakeFiles/EducationProject.dir/lib/algorithms/array/array.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/EducationProject.dir/lib/algorithms/array/array.c.i"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\array\array.c > CMakeFiles\EducationProject.dir\lib\algorithms\array\array.c.i
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\array\array.c > CMakeFiles\EducationProject.dir\lib\algorithms\array\array.c.i
 
 CMakeFiles/EducationProject.dir/lib/algorithms/array/array.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/EducationProject.dir/lib/algorithms/array/array.c.s"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\array\array.c -o CMakeFiles\EducationProject.dir\lib\algorithms\array\array.c.s
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\array\array.c -o CMakeFiles\EducationProject.dir\lib\algorithms\array\array.c.s
 
 CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.obj: CMakeFiles/EducationProject.dir/flags.make
 CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/algorithms/algorithm.c
 CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.obj: CMakeFiles/EducationProject.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.obj"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.obj -MF CMakeFiles\EducationProject.dir\lib\algorithms\algorithm.c.obj.d -o CMakeFiles\EducationProject.dir\lib\algorithms\algorithm.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\algorithm.c
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.obj -MF CMakeFiles\EducationProject.dir\lib\algorithms\algorithm.c.obj.d -o CMakeFiles\EducationProject.dir\lib\algorithms\algorithm.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\algorithm.c
 
 CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.i"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\algorithm.c > CMakeFiles\EducationProject.dir\lib\algorithms\algorithm.c.i
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\algorithm.c > CMakeFiles\EducationProject.dir\lib\algorithms\algorithm.c.i
 
 CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.s"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\algorithm.c -o CMakeFiles\EducationProject.dir\lib\algorithms\algorithm.c.s
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\algorithms\algorithm.c -o CMakeFiles\EducationProject.dir\lib\algorithms\algorithm.c.s
 
 CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.obj: CMakeFiles/EducationProject.dir/flags.make
 CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/bitset/bitset.c
 CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.obj: CMakeFiles/EducationProject.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.obj"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.obj -MF CMakeFiles\EducationProject.dir\lib\data_structures\bitset\bitset.c.obj.d -o CMakeFiles\EducationProject.dir\lib\data_structures\bitset\bitset.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\bitset\bitset.c
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.obj -MF CMakeFiles\EducationProject.dir\lib\data_structures\bitset\bitset.c.obj.d -o CMakeFiles\EducationProject.dir\lib\data_structures\bitset\bitset.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\bitset\bitset.c
 
 CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.i"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\bitset\bitset.c > CMakeFiles\EducationProject.dir\lib\data_structures\bitset\bitset.c.i
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\bitset\bitset.c > CMakeFiles\EducationProject.dir\lib\data_structures\bitset\bitset.c.i
 
 CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.s"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\bitset\bitset.c -o CMakeFiles\EducationProject.dir\lib\data_structures\bitset\bitset.c.s
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\bitset\bitset.c -o CMakeFiles\EducationProject.dir\lib\data_structures\bitset\bitset.c.s
 
 CMakeFiles/EducationProject.dir/lab_18.c.obj: CMakeFiles/EducationProject.dir/flags.make
 CMakeFiles/EducationProject.dir/lab_18.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lab_18.c
 CMakeFiles/EducationProject.dir/lab_18.c.obj: CMakeFiles/EducationProject.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/EducationProject.dir/lab_18.c.obj"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/lab_18.c.obj -MF CMakeFiles\EducationProject.dir\lab_18.c.obj.d -o CMakeFiles\EducationProject.dir\lab_18.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lab_18.c
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/lab_18.c.obj -MF CMakeFiles\EducationProject.dir\lab_18.c.obj.d -o CMakeFiles\EducationProject.dir\lab_18.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lab_18.c
 
 CMakeFiles/EducationProject.dir/lab_18.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/EducationProject.dir/lab_18.c.i"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lab_18.c > CMakeFiles\EducationProject.dir\lab_18.c.i
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lab_18.c > CMakeFiles\EducationProject.dir\lab_18.c.i
 
 CMakeFiles/EducationProject.dir/lab_18.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/EducationProject.dir/lab_18.c.s"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lab_18.c -o CMakeFiles\EducationProject.dir\lab_18.c.s
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lab_18.c -o CMakeFiles\EducationProject.dir\lab_18.c.s
 
 CMakeFiles/EducationProject.dir/lab_19.c.obj: CMakeFiles/EducationProject.dir/flags.make
 CMakeFiles/EducationProject.dir/lab_19.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lab_19.c
 CMakeFiles/EducationProject.dir/lab_19.c.obj: CMakeFiles/EducationProject.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/EducationProject.dir/lab_19.c.obj"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/lab_19.c.obj -MF CMakeFiles\EducationProject.dir\lab_19.c.obj.d -o CMakeFiles\EducationProject.dir\lab_19.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lab_19.c
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/lab_19.c.obj -MF CMakeFiles\EducationProject.dir\lab_19.c.obj.d -o CMakeFiles\EducationProject.dir\lab_19.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lab_19.c
 
 CMakeFiles/EducationProject.dir/lab_19.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/EducationProject.dir/lab_19.c.i"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lab_19.c > CMakeFiles\EducationProject.dir\lab_19.c.i
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lab_19.c > CMakeFiles\EducationProject.dir\lab_19.c.i
 
 CMakeFiles/EducationProject.dir/lab_19.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/EducationProject.dir/lab_19.c.s"
-	C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lab_19.c -o CMakeFiles\EducationProject.dir\lab_19.c.s
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lab_19.c -o CMakeFiles\EducationProject.dir\lab_19.c.s
+
+CMakeFiles/EducationProject.dir/discret_math.c.obj: CMakeFiles/EducationProject.dir/flags.make
+CMakeFiles/EducationProject.dir/discret_math.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/discret_math.c
+CMakeFiles/EducationProject.dir/discret_math.c.obj: CMakeFiles/EducationProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/EducationProject.dir/discret_math.c.obj"
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/discret_math.c.obj -MF CMakeFiles\EducationProject.dir\discret_math.c.obj.d -o CMakeFiles\EducationProject.dir\discret_math.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\discret_math.c
+
+CMakeFiles/EducationProject.dir/discret_math.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/EducationProject.dir/discret_math.c.i"
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\discret_math.c > CMakeFiles\EducationProject.dir\discret_math.c.i
+
+CMakeFiles/EducationProject.dir/discret_math.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/EducationProject.dir/discret_math.c.s"
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\discret_math.c -o CMakeFiles\EducationProject.dir\discret_math.c.s
+
+CMakeFiles/EducationProject.dir/exam.c.obj: CMakeFiles/EducationProject.dir/flags.make
+CMakeFiles/EducationProject.dir/exam.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/exam.c
+CMakeFiles/EducationProject.dir/exam.c.obj: CMakeFiles/EducationProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/EducationProject.dir/exam.c.obj"
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EducationProject.dir/exam.c.obj -MF CMakeFiles\EducationProject.dir\exam.c.obj.d -o CMakeFiles\EducationProject.dir\exam.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\exam.c
+
+CMakeFiles/EducationProject.dir/exam.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/EducationProject.dir/exam.c.i"
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\exam.c > CMakeFiles\EducationProject.dir\exam.c.i
+
+CMakeFiles/EducationProject.dir/exam.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/EducationProject.dir/exam.c.s"
+	"D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\exam.c -o CMakeFiles\EducationProject.dir\exam.c.s
 
 # Object files for target EducationProject
 EducationProject_OBJECTS = \
@@ -159,7 +187,9 @@ EducationProject_OBJECTS = \
 "CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c.obj" \
 "CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.obj" \
 "CMakeFiles/EducationProject.dir/lab_18.c.obj" \
-"CMakeFiles/EducationProject.dir/lab_19.c.obj"
+"CMakeFiles/EducationProject.dir/lab_19.c.obj" \
+"CMakeFiles/EducationProject.dir/discret_math.c.obj" \
+"CMakeFiles/EducationProject.dir/exam.c.obj"
 
 # External object files for target EducationProject
 EducationProject_EXTERNAL_OBJECTS =
@@ -170,6 +200,8 @@ EducationProject.exe: CMakeFiles/EducationProject.dir/lib/algorithms/algorithm.c
 EducationProject.exe: CMakeFiles/EducationProject.dir/lib/data_structures/bitset/bitset.c.obj
 EducationProject.exe: CMakeFiles/EducationProject.dir/lab_18.c.obj
 EducationProject.exe: CMakeFiles/EducationProject.dir/lab_19.c.obj
+EducationProject.exe: CMakeFiles/EducationProject.dir/discret_math.c.obj
+EducationProject.exe: CMakeFiles/EducationProject.dir/exam.c.obj
 EducationProject.exe: CMakeFiles/EducationProject.dir/build.make
 EducationProject.exe: lib/algorithms/libalgorithms.a
 EducationProject.exe: lib/algorithms/libalgorithms.a
@@ -177,7 +209,7 @@ EducationProject.exe: lib/data_structures/libdata_structures.a
 EducationProject.exe: CMakeFiles/EducationProject.dir/linkLibs.rsp
 EducationProject.exe: CMakeFiles/EducationProject.dir/objects1.rsp
 EducationProject.exe: CMakeFiles/EducationProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable EducationProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable EducationProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EducationProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/EducationProject.dir/discret_math.c.obj"
+  "CMakeFiles/EducationProject.dir/discret_math.c.obj.d"
+  "CMakeFiles/EducationProject.dir/exam.c.obj"
+  "CMakeFiles/EducationProject.dir/exam.c.obj.d"
   "CMakeFiles/EducationProject.dir/lab_18.c.obj"
   "CMakeFiles/EducationProject.dir/lab_18.c.obj.d"
   "CMakeFiles/EducationProject.dir/lab_19.c.obj"

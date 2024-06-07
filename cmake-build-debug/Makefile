@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-b
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"C:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -153,6 +153,54 @@ data_structures: cmake_check_build_system
 data_structures/fast:
 	$(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
+
+discret_math.obj: discret_math.c.obj
+.PHONY : discret_math.obj
+
+# target to build an object file
+discret_math.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EducationProject.dir\build.make CMakeFiles/EducationProject.dir/discret_math.c.obj
+.PHONY : discret_math.c.obj
+
+discret_math.i: discret_math.c.i
+.PHONY : discret_math.i
+
+# target to preprocess a source file
+discret_math.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EducationProject.dir\build.make CMakeFiles/EducationProject.dir/discret_math.c.i
+.PHONY : discret_math.c.i
+
+discret_math.s: discret_math.c.s
+.PHONY : discret_math.s
+
+# target to generate assembly for a file
+discret_math.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EducationProject.dir\build.make CMakeFiles/EducationProject.dir/discret_math.c.s
+.PHONY : discret_math.c.s
+
+exam.obj: exam.c.obj
+.PHONY : exam.obj
+
+# target to build an object file
+exam.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EducationProject.dir\build.make CMakeFiles/EducationProject.dir/exam.c.obj
+.PHONY : exam.c.obj
+
+exam.i: exam.c.i
+.PHONY : exam.i
+
+# target to preprocess a source file
+exam.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EducationProject.dir\build.make CMakeFiles/EducationProject.dir/exam.c.i
+.PHONY : exam.c.i
+
+exam.s: exam.c.s
+.PHONY : exam.s
+
+# target to generate assembly for a file
+exam.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EducationProject.dir\build.make CMakeFiles/EducationProject.dir/exam.c.s
+.PHONY : exam.c.s
 
 lab_18.obj: lab_18.c.obj
 .PHONY : lab_18.obj
@@ -309,6 +357,12 @@ help:
 	@echo ... EducationProject
 	@echo ... algorithms
 	@echo ... data_structures
+	@echo ... discret_math.obj
+	@echo ... discret_math.i
+	@echo ... discret_math.s
+	@echo ... exam.obj
+	@echo ... exam.i
+	@echo ... exam.s
 	@echo ... lab_18.obj
 	@echo ... lab_18.i
 	@echo ... lab_18.s

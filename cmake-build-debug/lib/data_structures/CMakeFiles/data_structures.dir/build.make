@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -72,85 +72,85 @@ lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj: lib/data
 lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/bitset/bitset.c
 lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj: lib/data_structures/CMakeFiles/data_structures.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj -MF CMakeFiles\data_structures.dir\bitset\bitset.c.obj.d -o CMakeFiles\data_structures.dir\bitset\bitset.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\bitset\bitset.c
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj -MF CMakeFiles\data_structures.dir\bitset\bitset.c.obj.d -o CMakeFiles\data_structures.dir\bitset\bitset.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\bitset\bitset.c
 
 lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/data_structures.dir/bitset/bitset.c.i"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\bitset\bitset.c > CMakeFiles\data_structures.dir\bitset\bitset.c.i
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\bitset\bitset.c > CMakeFiles\data_structures.dir\bitset\bitset.c.i
 
 lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/data_structures.dir/bitset/bitset.c.s"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\bitset\bitset.c -o CMakeFiles\data_structures.dir\bitset\bitset.c.s
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\bitset\bitset.c -o CMakeFiles\data_structures.dir\bitset\bitset.c.s
 
 lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj: lib/data_structures/CMakeFiles/data_structures.dir/flags.make
 lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/unorder_array_set/unorder_array_set.c
 lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj: lib/data_structures/CMakeFiles/data_structures.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj -MF CMakeFiles\data_structures.dir\unorder_array_set\unorder_array_set.c.obj.d -o CMakeFiles\data_structures.dir\unorder_array_set\unorder_array_set.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\unorder_array_set\unorder_array_set.c
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj -MF CMakeFiles\data_structures.dir\unorder_array_set\unorder_array_set.c.obj.d -o CMakeFiles\data_structures.dir\unorder_array_set\unorder_array_set.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\unorder_array_set\unorder_array_set.c
 
 lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.i"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\unorder_array_set\unorder_array_set.c > CMakeFiles\data_structures.dir\unorder_array_set\unorder_array_set.c.i
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\unorder_array_set\unorder_array_set.c > CMakeFiles\data_structures.dir\unorder_array_set\unorder_array_set.c.i
 
 lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.s"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\unorder_array_set\unorder_array_set.c -o CMakeFiles\data_structures.dir\unorder_array_set\unorder_array_set.c.s
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\unorder_array_set\unorder_array_set.c -o CMakeFiles\data_structures.dir\unorder_array_set\unorder_array_set.c.s
 
 lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj: lib/data_structures/CMakeFiles/data_structures.dir/flags.make
 lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/order_array_set/order_array_set.c
 lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj: lib/data_structures/CMakeFiles/data_structures.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj -MF CMakeFiles\data_structures.dir\order_array_set\order_array_set.c.obj.d -o CMakeFiles\data_structures.dir\order_array_set\order_array_set.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\order_array_set\order_array_set.c
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj -MF CMakeFiles\data_structures.dir\order_array_set\order_array_set.c.obj.d -o CMakeFiles\data_structures.dir\order_array_set\order_array_set.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\order_array_set\order_array_set.c
 
 lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.i"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\order_array_set\order_array_set.c > CMakeFiles\data_structures.dir\order_array_set\order_array_set.c.i
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\order_array_set\order_array_set.c > CMakeFiles\data_structures.dir\order_array_set\order_array_set.c.i
 
 lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.s"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\order_array_set\order_array_set.c -o CMakeFiles\data_structures.dir\order_array_set\order_array_set.c.s
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\order_array_set\order_array_set.c -o CMakeFiles\data_structures.dir\order_array_set\order_array_set.c.s
 
 lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.obj: lib/data_structures/CMakeFiles/data_structures.dir/flags.make
 lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/vector_void/vector_void.c
 lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.obj: lib/data_structures/CMakeFiles/data_structures.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.obj"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.obj -MF CMakeFiles\data_structures.dir\vector_void\vector_void.c.obj.d -o CMakeFiles\data_structures.dir\vector_void\vector_void.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\vector_void\vector_void.c
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.obj -MF CMakeFiles\data_structures.dir\vector_void\vector_void.c.obj.d -o CMakeFiles\data_structures.dir\vector_void\vector_void.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\vector_void\vector_void.c
 
 lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/data_structures.dir/vector_void/vector_void.c.i"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\vector_void\vector_void.c > CMakeFiles\data_structures.dir\vector_void\vector_void.c.i
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\vector_void\vector_void.c > CMakeFiles\data_structures.dir\vector_void\vector_void.c.i
 
 lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/data_structures.dir/vector_void/vector_void.c.s"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\vector_void\vector_void.c -o CMakeFiles\data_structures.dir\vector_void\vector_void.c.s
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\vector_void\vector_void.c -o CMakeFiles\data_structures.dir\vector_void\vector_void.c.s
 
 lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj: lib/data_structures/CMakeFiles/data_structures.dir/flags.make
 lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/matrix/matrix.c
 lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj: lib/data_structures/CMakeFiles/data_structures.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj -MF CMakeFiles\data_structures.dir\matrix\matrix.c.obj.d -o CMakeFiles\data_structures.dir\matrix\matrix.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\matrix\matrix.c
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj -MF CMakeFiles\data_structures.dir\matrix\matrix.c.obj.d -o CMakeFiles\data_structures.dir\matrix\matrix.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\matrix\matrix.c
 
 lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/data_structures.dir/matrix/matrix.c.i"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\matrix\matrix.c > CMakeFiles\data_structures.dir\matrix\matrix.c.i
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\matrix\matrix.c > CMakeFiles\data_structures.dir\matrix\matrix.c.i
 
 lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/data_structures.dir/matrix/matrix.c.s"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\matrix\matrix.c -o CMakeFiles\data_structures.dir\matrix\matrix.c.s
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\matrix\matrix.c -o CMakeFiles\data_structures.dir\matrix\matrix.c.s
 
 lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj: lib/data_structures/CMakeFiles/data_structures.dir/flags.make
 lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj: C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/string_/string_.c
 lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj: lib/data_structures/CMakeFiles/data_structures.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj -MF CMakeFiles\data_structures.dir\string_\string_.c.obj.d -o CMakeFiles\data_structures.dir\string_\string_.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\string_\string_.c
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj -MF CMakeFiles\data_structures.dir\string_\string_.c.obj.d -o CMakeFiles\data_structures.dir\string_\string_.c.obj -c C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\string_\string_.c
 
 lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/data_structures.dir/string_/string_.c.i"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\string_\string_.c > CMakeFiles\data_structures.dir\string_\string_.c.i
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\string_\string_.c > CMakeFiles\data_structures.dir\string_\string_.c.i
 
 lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/data_structures.dir/string_/string_.c.s"
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && C:\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\string_\string_.c -o CMakeFiles\data_structures.dir\string_\string_.c.s
+	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures && "D:\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\string_\string_.c -o CMakeFiles\data_structures.dir\string_\string_.c.s
 
 # Object files for target data_structures
 data_structures_OBJECTS = \

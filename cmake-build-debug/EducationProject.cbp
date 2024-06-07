@@ -11,10 +11,10 @@
 				<Option working_dir="C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="EducationProject">
@@ -24,16 +24,16 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 EducationProject"/>
-					<CompileFile command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 EducationProject"/>
+					<CompileFile command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="EducationProject/fast">
@@ -43,36 +43,36 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 EducationProject/fast"/>
-					<CompileFile command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 EducationProject/fast"/>
+					<CompileFile command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="algorithms">
@@ -82,16 +82,16 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 algorithms"/>
-					<CompileFile command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 algorithms"/>
+					<CompileFile command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="algorithms/fast">
@@ -101,16 +101,16 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 algorithms/fast"/>
-					<CompileFile command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 algorithms/fast"/>
+					<CompileFile command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/algorithms/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="data_structures">
@@ -120,16 +120,16 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 data_structures"/>
-					<CompileFile command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 data_structures"/>
+					<CompileFile command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="data_structures/fast">
@@ -139,19 +139,25 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 data_structures/fast"/>
-					<CompileFile command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 data_structures/fast"/>
+					<CompileFile command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/cmake-build-debug/lib/data_structures/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/discret_math.c">
+			<Option target="EducationProject"/>
+		</Unit>
+		<Unit filename="C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/exam.c">
+			<Option target="EducationProject"/>
+		</Unit>
 		<Unit filename="C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lab_18.c">
 			<Option target="EducationProject"/>
 		</Unit>

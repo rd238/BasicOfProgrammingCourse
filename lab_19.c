@@ -404,7 +404,7 @@ void zadanie10(){
 
 
 
-
+/*
 int main(){
 
     /* Zadanie 6
@@ -462,7 +462,7 @@ int main(){
     fclose(file);
 
     zadanie9(4);
-     */
+
 
 
     FILE *file_f = fopen("D:\\CLion 2023.3.4\\Projects\\text\\zadanie10f.txt", "wb");
@@ -498,3 +498,4 @@ int main(){
 
 
 }
+*/

@@ -1,6 +1,6 @@
-lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj: \
- C:\Users\User\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\unorder_array_set\unorder_array_set.c \
- C:\Users\User\CLionProjects\BasicOfProgrammingCourse\lib\data_structures\unorder_array_set\unorder_array_set.h \
+CMakeFiles/EducationProject.dir/exam.c.obj: \
+ C:\Users\User\CLionProjects\BasicOfProgrammingCourse\exam.c \
+ C:\Users\User\CLionProjects\BasicOfProgrammingCourse\lib/data_structures/unorder_array_set/unorder_array_set.h \
  D:/CLion\ 2024.1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
  D:/CLion\ 2024.1.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
  D:/CLion\ 2024.1.2/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
@@ -29,4 +29,6 @@ lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_arr
  D:/CLion\ 2024.1.2/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
  D:/CLion\ 2024.1.2/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  D:/CLion\ 2024.1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h \
+ C:/Users/User/CLionProjects/BasicOfProgrammingCourse/lib/algorithms/array/array.h \
+ C:\Users\User\CLionProjects\BasicOfProgrammingCourse\lib/data_structures/order_array_set/order_array_set.h \
  C:/Users/User/CLionProjects/BasicOfProgrammingCourse/lib/algorithms/array/array.h

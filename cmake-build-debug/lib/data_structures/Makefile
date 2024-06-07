@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2024.1.2\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "D:\CLion 2024.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\logca\CLionProjects\BasicOfProgrammingCourse
+CMAKE_SOURCE_DIR = C:\Users\User\CLionProjects\BasicOfProgrammingCourse
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-b
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\CLion 2024.1.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"D:\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\CLion 2024.1.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures\\CMakeFiles\progress.marks
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/data_structures/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\lib\data_structures\\CMakeFiles\progress.marks
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/data_structures/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/data_structures/clean
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/data_structures/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/data_structures/preinstall
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/data_structures/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/data_structures/preinstall
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/data_structures/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/data_structures/CMakeFiles/data_structures.dir/rule:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/data_structures/CMakeFiles/data_structures.dir/rule
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/data_structures/CMakeFiles/data_structures.dir/rule
 .PHONY : lib/data_structures/CMakeFiles/data_structures.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ data_structures: lib/data_structures/CMakeFiles/data_structures.dir/rule
 
 # fast build rule for target.
 data_structures/fast:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/build
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
 bitset/bitset.obj: bitset/bitset.c.obj
@@ -134,7 +134,7 @@ bitset/bitset.obj: bitset/bitset.c.obj
 
 # target to build an object file
 bitset/bitset.c.obj:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj
 .PHONY : bitset/bitset.c.obj
 
 bitset/bitset.i: bitset/bitset.c.i
@@ -142,7 +142,7 @@ bitset/bitset.i: bitset/bitset.c.i
 
 # target to preprocess a source file
 bitset/bitset.c.i:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.i
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.i
 .PHONY : bitset/bitset.c.i
 
 bitset/bitset.s: bitset/bitset.c.s
@@ -150,7 +150,7 @@ bitset/bitset.s: bitset/bitset.c.s
 
 # target to generate assembly for a file
 bitset/bitset.c.s:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.s
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.s
 .PHONY : bitset/bitset.c.s
 
 matrix/matrix.obj: matrix/matrix.c.obj
@@ -158,7 +158,7 @@ matrix/matrix.obj: matrix/matrix.c.obj
 
 # target to build an object file
 matrix/matrix.c.obj:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj
 .PHONY : matrix/matrix.c.obj
 
 matrix/matrix.i: matrix/matrix.c.i
@@ -166,7 +166,7 @@ matrix/matrix.i: matrix/matrix.c.i
 
 # target to preprocess a source file
 matrix/matrix.c.i:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.i
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.i
 .PHONY : matrix/matrix.c.i
 
 matrix/matrix.s: matrix/matrix.c.s
@@ -174,7 +174,7 @@ matrix/matrix.s: matrix/matrix.c.s
 
 # target to generate assembly for a file
 matrix/matrix.c.s:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.s
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.s
 .PHONY : matrix/matrix.c.s
 
 order_array_set/order_array_set.obj: order_array_set/order_array_set.c.obj
@@ -182,7 +182,7 @@ order_array_set/order_array_set.obj: order_array_set/order_array_set.c.obj
 
 # target to build an object file
 order_array_set/order_array_set.c.obj:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj
 .PHONY : order_array_set/order_array_set.c.obj
 
 order_array_set/order_array_set.i: order_array_set/order_array_set.c.i
@@ -190,7 +190,7 @@ order_array_set/order_array_set.i: order_array_set/order_array_set.c.i
 
 # target to preprocess a source file
 order_array_set/order_array_set.c.i:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.i
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.i
 .PHONY : order_array_set/order_array_set.c.i
 
 order_array_set/order_array_set.s: order_array_set/order_array_set.c.s
@@ -198,7 +198,7 @@ order_array_set/order_array_set.s: order_array_set/order_array_set.c.s
 
 # target to generate assembly for a file
 order_array_set/order_array_set.c.s:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.s
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.s
 .PHONY : order_array_set/order_array_set.c.s
 
 string_/string_.obj: string_/string_.c.obj
@@ -206,7 +206,7 @@ string_/string_.obj: string_/string_.c.obj
 
 # target to build an object file
 string_/string_.c.obj:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj
 .PHONY : string_/string_.c.obj
 
 string_/string_.i: string_/string_.c.i
@@ -214,7 +214,7 @@ string_/string_.i: string_/string_.c.i
 
 # target to preprocess a source file
 string_/string_.c.i:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.i
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.i
 .PHONY : string_/string_.c.i
 
 string_/string_.s: string_/string_.c.s
@@ -222,7 +222,7 @@ string_/string_.s: string_/string_.c.s
 
 # target to generate assembly for a file
 string_/string_.c.s:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.s
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.s
 .PHONY : string_/string_.c.s
 
 unorder_array_set/unorder_array_set.obj: unorder_array_set/unorder_array_set.c.obj
@@ -230,7 +230,7 @@ unorder_array_set/unorder_array_set.obj: unorder_array_set/unorder_array_set.c.o
 
 # target to build an object file
 unorder_array_set/unorder_array_set.c.obj:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj
 .PHONY : unorder_array_set/unorder_array_set.c.obj
 
 unorder_array_set/unorder_array_set.i: unorder_array_set/unorder_array_set.c.i
@@ -238,7 +238,7 @@ unorder_array_set/unorder_array_set.i: unorder_array_set/unorder_array_set.c.i
 
 # target to preprocess a source file
 unorder_array_set/unorder_array_set.c.i:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.i
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.i
 .PHONY : unorder_array_set/unorder_array_set.c.i
 
 unorder_array_set/unorder_array_set.s: unorder_array_set/unorder_array_set.c.s
@@ -246,7 +246,7 @@ unorder_array_set/unorder_array_set.s: unorder_array_set/unorder_array_set.c.s
 
 # target to generate assembly for a file
 unorder_array_set/unorder_array_set.c.s:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.s
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.s
 .PHONY : unorder_array_set/unorder_array_set.c.s
 
 vector_void/vector_void.obj: vector_void/vector_void.c.obj
@@ -254,7 +254,7 @@ vector_void/vector_void.obj: vector_void/vector_void.c.obj
 
 # target to build an object file
 vector_void/vector_void.c.obj:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.obj
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.obj
 .PHONY : vector_void/vector_void.c.obj
 
 vector_void/vector_void.i: vector_void/vector_void.c.i
@@ -262,7 +262,7 @@ vector_void/vector_void.i: vector_void/vector_void.c.i
 
 # target to preprocess a source file
 vector_void/vector_void.c.i:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.i
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.i
 .PHONY : vector_void/vector_void.c.i
 
 vector_void/vector_void.s: vector_void/vector_void.c.s
@@ -270,7 +270,7 @@ vector_void/vector_void.s: vector_void/vector_void.c.s
 
 # target to generate assembly for a file
 vector_void/vector_void.c.s:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.s
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib\data_structures\CMakeFiles\data_structures.dir\build.make lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.s
 .PHONY : vector_void/vector_void.c.s
 
 # Help Target
@@ -311,6 +311,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\User\CLionProjects\BasicOfProgrammingCourse\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

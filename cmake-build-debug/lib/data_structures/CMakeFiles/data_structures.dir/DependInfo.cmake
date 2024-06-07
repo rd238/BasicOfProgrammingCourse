@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/bitset/bitset.c" "lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj" "gcc" "lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj.d"
-  "C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/matrix/matrix.c" "lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj" "gcc" "lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj.d"
-  "C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/order_array_set/order_array_set.c" "lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj" "gcc" "lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj.d"
-  "C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/string_/string_.c" "lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj" "gcc" "lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj.d"
-  "C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/unorder_array_set/unorder_array_set.c" "lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj" "gcc" "lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj.d"
-  "C:/Users/logca/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/vector_void/vector_void.c" "lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.obj" "gcc" "lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.obj.d"
+  "C:/Users/User/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/bitset/bitset.c" "lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj" "gcc" "lib/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj.d"
+  "C:/Users/User/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/matrix/matrix.c" "lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj" "gcc" "lib/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj.d"
+  "C:/Users/User/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/order_array_set/order_array_set.c" "lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj" "gcc" "lib/data_structures/CMakeFiles/data_structures.dir/order_array_set/order_array_set.c.obj.d"
+  "C:/Users/User/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/string_/string_.c" "lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj" "gcc" "lib/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj.d"
+  "C:/Users/User/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/unorder_array_set/unorder_array_set.c" "lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj" "gcc" "lib/data_structures/CMakeFiles/data_structures.dir/unorder_array_set/unorder_array_set.c.obj.d"
+  "C:/Users/User/CLionProjects/BasicOfProgrammingCourse/lib/data_structures/vector_void/vector_void.c" "lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.obj" "gcc" "lib/data_structures/CMakeFiles/data_structures.dir/vector_void/vector_void.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

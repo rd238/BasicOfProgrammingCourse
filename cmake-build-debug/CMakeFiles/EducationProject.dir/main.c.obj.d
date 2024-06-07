@@ -1,2 +1,2 @@
 CMakeFiles/EducationProject.dir/main.c.obj: \
- C:\Users\logca\CLionProjects\BasicOfProgrammingCourse\main.c
+ C:\Users\User\CLionProjects\BasicOfProgrammingCourse\main.c

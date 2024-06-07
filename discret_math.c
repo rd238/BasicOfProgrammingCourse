@@ -621,11 +621,6 @@ void combination(int nM, int k){
     combination_(M, C, nM, k, 0, 0);
 }
 
-void swap(int *a, int *b){
-    int temp = *a;
-    *a = *b;
-    *b = *a;
-}
 
 void permutation_(int *M, int *P, int nM, int i){
     if(i == nM){
